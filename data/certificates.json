@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ibm-full-stack-javascript-developer",
+    "title": "IBM Full-Stack JavaScript Developer",
+    "provider": "IBM Skills Network",
+    "completedDate": "2026-07-04",
+    "specialty": "Full-stack JavaScript development",
+    "professionalIdentity": "Junior Full-Stack JavaScript Developer",
+    "role": "Build full-stack web applications using JavaScript, React, Node.js, Express and MongoDB.",
+    "courses": [
+      "Introduction to Software Engineering",
+      "Introduction to HTML, CSS, & JavaScript",
+      "Getting Started with Git and GitHub",
+      "JavaScript Programming Essentials",
+      "Developing Front-End Apps with React",
+      "Developing Back-End Apps with Node.js and Express",
+      "Get Started with Cloud Native, DevOps, Agile, and NoSQL",
+      "Introduction to Containers with Docker, Kubernetes and OpenShift",
+      "Application Development using Microservices and Serverless",
+      "Node.js and MongoDB: Developing Back-end Database Applications",
+      "JavaScript Full Stack Capstone Project",
+      "Software Developer Career Guide and Interview Preparation"
+    ]
+  },
+  {
+    "id": "ibm-devops-and-software-engineering",
+    "title": "IBM DevOps and Software Engineering",
+    "provider": "IBM Skills Network",
+    "completedDate": "2026-06-27",
+    "specialty": "DevOps, automation, testing, security and deployment",
+    "professionalIdentity": "Junior DevOps Practitioner / QA / Automation Assistant",
+    "role": "Organize, test, secure, automate and deploy applications using DevOps practices.",
+    "courses": [
+      "Introduction to DevOps",
+      "Introduction to Cloud Computing",
+      "Introduction to Agile Development and Scrum",
+      "Introduction to Software Engineering",
+      "Getting Started with Git and GitHub",
+      "Hands-on Introduction to Linux Commands and Shell Scripting",
+      "Python for Data Science, AI & Development",
+      "Developing AI Applications with Python and Flask",
+      "Introduction to Containers with Docker, Kubernetes and OpenShift",
+      "Application Development using Microservices and Serverless",
+      "Introduction to Test and Behavior Driven Development",
+      "Continuous Integration and Continuous Delivery CI/CD",
+      "Application Security for Developers and DevOps Professionals",
+      "Monitoring and Observability for Development and DevOps",
+      "DevOps Capstone Project"
+    ]
+  },
+  {
+    "id": "ibm-ai-developer",
+    "title": "IBM AI Developer",
+    "provider": "IBM Skills Network",
+    "completedDate": "2026-06-19",
+    "specialty": "Artificial intelligence and generative AI applications",
+    "professionalIdentity": "Junior AI Developer / AI Automation Assistant",
+    "role": "Build AI-powered applications, chatbots and intelligent tools using Python, Flask and generative AI.",
+    "courses": [
+      "Introduction to Software Engineering",
+      "Introduction to Artificial Intelligence AI",
+      "Generative AI: Introduction and Applications",
+      "Generative AI: Prompt Engineering Basics",
+      "Introduction to HTML, CSS, & JavaScript",
+      "Python for Data Science, AI & Development",
+      "Developing AI Applications with Python and Flask",
+      "Building Generative AI-Powered Applications with Python",
+      "Generative AI: Elevate your Software Development Career",
+      "Software Developer Career Guide and Interview Preparation"
+    ]
+  },
+  {
+    "id": "ibm-full-stack-software-developer",
+    "title": "IBM Full Stack Software Developer",
+    "provider": "IBM Skills Network",
+    "completedDate": "2026-06-19",
+    "specialty": "Complete full-stack software development",
+    "professionalIdentity": "Junior Full-Stack Software Developer",
+    "role": "Build complete cloud-native applications using frontend, backend, databases, DevOps, containers and cloud practices.",
+    "courses": [
+      "Introduction to Software Engineering",
+      "Introduction to Cloud Computing",
+      "Introduction to HTML, CSS, & JavaScript",
+      "Getting Started with Git and GitHub",
+      "Developing Front-End Apps with React",
+      "Developing Back-End Apps with Node.js and Express",
+      "Python for Data Science, AI & Development",
+      "Developing AI Applications with Python and Flask",
+      "Django Application Development with SQL and Databases",
+      "Introduction to Containers with Docker, Kubernetes and OpenShift",
+      "Application Development using Microservices and Serverless",
+      "Full Stack Application Development Capstone Project",
+      "Full Stack Software Developer Assessment",
+      "Generative AI: Elevate your Software Development Career",
+      "Software Developer Career Guide and Interview Preparation"
+    ]
+  }
+]
