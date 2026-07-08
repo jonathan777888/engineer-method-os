@@ -1,0 +1,182 @@
+[
+  {
+    "id": "software-engineering-method",
+    "name": "Software Engineering Method",
+    "category": "Software Engineering",
+    "level": "foundation",
+    "explanation": "Organiser un projet logiciel avec une méthode professionnelle : analyser, concevoir, développer, tester et améliorer.",
+    "linkedCourses": [
+      "software-engineering"
+    ],
+    "professionalUse": "Créer des projets structurés et compréhensibles pour un employeur."
+  },
+  {
+    "id": "version-control",
+    "name": "Git and GitHub Version Control",
+    "category": "Collaboration",
+    "level": "foundation",
+    "explanation": "Suivre les changements du code, sauvegarder le projet et montrer son travail sur GitHub.",
+    "linkedCourses": [
+      "git-github"
+    ],
+    "professionalUse": "Construire un portfolio professionnel avec commits, branches et documentation."
+  },
+  {
+    "id": "frontend-basics",
+    "name": "HTML, CSS and JavaScript Frontend",
+    "category": "Frontend",
+    "level": "foundation",
+    "explanation": "Créer la structure, le style et l’interactivité d’une interface web.",
+    "linkedCourses": [
+      "html-css-javascript"
+    ],
+    "professionalUse": "Créer les premières pages visibles d’une application."
+  },
+  {
+    "id": "react-components",
+    "name": "React Component-Based UI",
+    "category": "Frontend",
+    "level": "intermediate",
+    "explanation": "Construire une interface moderne avec des composants réutilisables.",
+    "linkedCourses": [
+      "react"
+    ],
+    "professionalUse": "Créer le dashboard, les cartes de cours, les fiches de compétences et les pages de projet."
+  },
+  {
+    "id": "backend-api",
+    "name": "Node.js and Express API",
+    "category": "Backend",
+    "level": "intermediate",
+    "explanation": "Créer un serveur et des routes API pour recevoir des demandes et envoyer des données.",
+    "linkedCourses": [
+      "node-express"
+    ],
+    "professionalUse": "Créer les routes de Engineer Method OS : cours, compétences, modèles et projets."
+  },
+  {
+    "id": "database-mongodb",
+    "name": "MongoDB Database Management",
+    "category": "Database",
+    "level": "intermediate",
+    "explanation": "Stocker et récupérer des données dans une base NoSQL.",
+    "linkedCourses": [
+      "node-mongodb"
+    ],
+    "professionalUse": "Enregistrer les certificats, les cours, les compétences, les modèles de code et les projets."
+  },
+  {
+    "id": "python-automation",
+    "name": "Python Automation and Data",
+    "category": "Python",
+    "level": "foundation",
+    "explanation": "Utiliser Python pour automatiser des tâches, manipuler des données et créer des outils intelligents.",
+    "linkedCourses": [
+      "python-data-ai"
+    ],
+    "professionalUse": "Créer plus tard des scripts d’analyse, de résumé ou d’automatisation."
+  },
+  {
+    "id": "flask-ai-apps",
+    "name": "Python Flask AI Applications",
+    "category": "AI Backend",
+    "level": "intermediate",
+    "explanation": "Créer une petite application Python capable de recevoir des demandes et retourner des réponses.",
+    "linkedCourses": [
+      "python-flask-ai"
+    ],
+    "professionalUse": "Ajouter plus tard un assistant IA qui explique les cours, les concepts et les modèles de code."
+  },
+  {
+    "id": "django-sql-backend",
+    "name": "Django and SQL Backend",
+    "category": "Backend",
+    "level": "intermediate",
+    "explanation": "Créer une application structurée avec Django et une base de données SQL.",
+    "linkedCourses": [
+      "django-sql"
+    ],
+    "professionalUse": "Comprendre les modèles de données, les relations et les applications backend structurées."
+  },
+  {
+    "id": "devops-workflow",
+    "name": "DevOps Workflow",
+    "category": "DevOps",
+    "level": "intermediate",
+    "explanation": "Relier développement, tests, automatisation, déploiement et amélioration continue.",
+    "linkedCourses": [
+      "devops-intro",
+      "agile-scrum"
+    ],
+    "professionalUse": "Travailler avec une méthode professionnelle étape par étape."
+  },
+  {
+    "id": "linux-shell",
+    "name": "Linux and Shell Commands",
+    "category": "Terminal",
+    "level": "foundation",
+    "explanation": "Utiliser le terminal pour créer des fichiers, lancer des projets et automatiser des tâches.",
+    "linkedCourses": [
+      "linux-shell"
+    ],
+    "professionalUse": "Gérer un projet GitHub, créer des dossiers, installer des dépendances et exécuter des scripts."
+  },
+  {
+    "id": "testing-quality",
+    "name": "Testing and Quality Assurance",
+    "category": "Quality",
+    "level": "intermediate",
+    "explanation": "Vérifier qu’une application fonctionne correctement et éviter les erreurs.",
+    "linkedCourses": [
+      "testing-bdd-tdd"
+    ],
+    "professionalUse": "Rendre Engineer Method OS plus fiable et plus professionnel."
+  },
+  {
+    "id": "cicd-automation",
+    "name": "CI/CD Automation",
+    "category": "Automation",
+    "level": "intermediate",
+    "explanation": "Automatiser les vérifications et le déploiement après chaque changement de code.",
+    "linkedCourses": [
+      "cicd"
+    ],
+    "professionalUse": "Utiliser plus tard GitHub Actions pour tester et déployer le projet."
+  },
+  {
+    "id": "application-security",
+    "name": "Application Security",
+    "category": "Security",
+    "level": "intermediate",
+    "explanation": "Protéger les données, les utilisateurs et les accès de l’application.",
+    "linkedCourses": [
+      "application-security"
+    ],
+    "professionalUse": "Éviter les mauvaises pratiques comme exposer des secrets ou accepter des données dangereuses."
+  },
+  {
+    "id": "containers-deployment",
+    "name": "Docker and Container Deployment",
+    "category": "Deployment",
+    "level": "intermediate",
+    "explanation": "Préparer une application pour fonctionner dans un environnement stable et portable.",
+    "linkedCourses": [
+      "containers"
+    ],
+    "professionalUse": "Rendre le projet plus professionnel et prêt pour un déploiement."
+  },
+  {
+    "id": "generative-ai",
+    "name": "Generative AI and Prompt Engineering",
+    "category": "Artificial Intelligence",
+    "level": "intermediate",
+    "explanation": "Utiliser l’IA générative pour créer des explications, des résumés, des idées et de l’aide au code.",
+    "linkedCourses": [
+      "ai-intro",
+      "generative-ai",
+      "prompt-engineering",
+      "genai-python-apps"
+    ],
+    "professionalUse": "Créer un assistant IA dans Engineer Method OS pour expliquer les cours et les modèles."
+  }
+]
