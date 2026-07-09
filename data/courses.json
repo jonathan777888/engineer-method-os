@@ -1,345 +1,249 @@
 [
   {
-    "id": "software-engineering",
-    "title": "Introduction to Software Engineering",
-    "type": "common",
-    "category": "Software Engineering",
-    "skill": "Understand the software development process",
-    "simpleExplanation": "This course teaches how software is planned, designed, built, tested and improved.",
-    "professionalUse": "Use software engineering methods to organize any application project.",
+    "id": "sdlc",
+    "name": "Software Development Life Cycle",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-devops-and-software-engineering",
-      "ibm-ai-developer",
-      "ibm-full-stack-software-developer"
-    ]
+      "google-software-engineering",
+      "ibm-devops",
+      "ibm-full-stack"
+    ],
+    "branch": "similarite",
+    "skill_area": "Software Methodology",
+    "simple_explanation": "Le SDLC est le cycle de vie d'un logiciel : comprendre le besoin, concevoir, coder, tester, déployer et maintenir.",
+    "professional_use": "Aide à travailler comme un vrai ingénieur logiciel au lieu de seulement écrire du code.",
+    "proof": "Engineer Method OS documentation"
+  },
+  {
+    "id": "agile",
+    "name": "Agile Methodology",
+    "certificates": [
+      "google-software-engineering",
+      "ibm-devops"
+    ],
+    "branch": "similarite",
+    "skill_area": "Project Management",
+    "simple_explanation": "Agile est une méthode de travail où l'on avance par petites étapes, avec des améliorations régulières.",
+    "professional_use": "Utile pour travailler en équipe, livrer rapidement et corriger selon les retours.",
+    "proof": "Notes SDLC et préparation entretien"
   },
   {
     "id": "git-github",
-    "title": "Getting Started with Git and GitHub",
-    "type": "common",
-    "category": "Version Control",
-    "skill": "Save, track and share code",
-    "simpleExplanation": "Git tracks changes in a project. GitHub stores and shares the project online.",
-    "professionalUse": "Build a professional portfolio and show project progress to employers.",
+    "name": "Git and GitHub",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-devops-and-software-engineering",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-full-stack",
+      "ibm-devops",
+      "google-software-engineering"
+    ],
+    "branch": "similarite",
+    "skill_area": "Version Control",
+    "simple_explanation": "Git permet de suivre les changements dans le code. GitHub permet de publier, collaborer et montrer ses projets.",
+    "professional_use": "Indispensable pour prouver ses projets, collaborer et gérer les versions.",
+    "proof": "Repositories GitHub"
   },
   {
-    "id": "html-css-javascript",
-    "title": "Introduction to HTML, CSS, & JavaScript",
-    "type": "common",
-    "category": "Frontend",
-    "skill": "Build web pages",
-    "simpleExplanation": "HTML gives structure, CSS gives style, and JavaScript adds interaction.",
-    "professionalUse": "Create the visible interface of an application.",
+    "id": "python",
+    "name": "Python Programming",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-ai-developer",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-full-stack",
+      "ibm-devops",
+      "ibm-ai-python",
+      "micro1-ai-interview"
+    ],
+    "branch": "similarite",
+    "skill_area": "Programming",
+    "simple_explanation": "Python est un langage utilisé pour le backend, les scripts, l'IA, les tests et l'automatisation.",
+    "professional_use": "Permet de construire des API, automatiser des tâches et résoudre des problèmes techniques.",
+    "proof": "Emotion Detection App, Django projects, backup scripts"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "certificates": [
+      "ibm-full-stack"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Frontend and Backend Web",
+    "simple_explanation": "JavaScript permet de rendre les pages web interactives et de construire des serveurs avec Node.js.",
+    "professional_use": "Utile pour créer des interfaces modernes et des applications web complètes.",
+    "proof": "React and Node.js projects"
   },
   {
     "id": "react",
-    "title": "Developing Front-End Apps with React",
-    "type": "common",
-    "category": "Frontend",
-    "skill": "Build user interfaces with components",
-    "simpleExplanation": "React helps create modern interfaces by dividing the page into reusable components.",
-    "professionalUse": "Build the frontend dashboard of Engineer Method OS.",
+    "name": "React",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-full-stack"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Frontend",
+    "simple_explanation": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur avec des composants.",
+    "professional_use": "Permet de créer des applications web modernes et réutilisables.",
+    "proof": "Paradise Nursery Shopping project"
+  },
+  {
+    "id": "django",
+    "name": "Django",
+    "certificates": [
+      "ibm-full-stack"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Backend",
+    "simple_explanation": "Django est un framework Python pour construire rapidement des applications web sécurisées.",
+    "professional_use": "Utile pour créer un backend, gérer des modèles, des routes, une base de données et une interface admin.",
+    "proof": "Online Course Django project"
+  },
+  {
+    "id": "flask",
+    "name": "Flask",
+    "certificates": [
+      "ibm-ai-python",
+      "ibm-full-stack"
+    ],
+    "branch": "similarite",
+    "skill_area": "Backend",
+    "simple_explanation": "Flask est un framework Python léger pour créer des API et des applications web.",
+    "professional_use": "Permet de construire rapidement un service web ou une API.",
+    "proof": "Emotion Detection App"
   },
   {
     "id": "node-express",
-    "title": "Developing Back-End Apps with Node.js and Express",
-    "type": "common",
-    "category": "Backend",
-    "skill": "Build servers and APIs",
-    "simpleExplanation": "Node.js runs JavaScript on the server. Express helps create routes and APIs.",
-    "professionalUse": "Build the backend API of Engineer Method OS.",
+    "name": "Node.js and Express",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-full-stack"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Backend",
+    "simple_explanation": "Node.js permet d'utiliser JavaScript côté serveur. Express sert à créer des routes et des API.",
+    "professional_use": "Utile pour construire des services backend rapides et connecter une application à des données.",
+    "proof": "Express Book Reviews project"
   },
   {
-    "id": "python-data-ai",
-    "title": "Python for Data Science, AI & Development",
-    "type": "common",
-    "category": "Python",
-    "skill": "Use Python for development, data and AI",
-    "simpleExplanation": "Python is useful for automation, data analysis, backend tools and AI applications.",
-    "professionalUse": "Create intelligent tools and automation features.",
+    "id": "api-rest",
+    "name": "REST API",
     "certificates": [
-      "ibm-devops-and-software-engineering",
-      "ibm-ai-developer",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-full-stack",
+      "ibm-ai-python",
+      "ibm-devops"
+    ],
+    "branch": "similarite",
+    "skill_area": "Backend and Integration",
+    "simple_explanation": "Une API REST permet à deux systèmes de communiquer avec des requêtes comme GET, POST, PUT et DELETE.",
+    "professional_use": "Indispensable pour connecter frontend, backend, IA, bases de données et microservices.",
+    "proof": "Cars Dealership, Express Book Reviews, Emotion Detection"
   },
   {
-    "id": "python-flask-ai",
-    "title": "Developing AI Applications with Python and Flask",
-    "type": "common",
-    "category": "AI Backend",
-    "skill": "Build AI-powered web applications",
-    "simpleExplanation": "Flask allows Python applications to receive requests and return responses.",
-    "professionalUse": "Create an AI assistant module for Engineer Method OS.",
+    "id": "docker",
+    "name": "Docker",
     "certificates": [
-      "ibm-devops-and-software-engineering",
-      "ibm-ai-developer",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-devops"
+    ],
+    "branch": "differenciation",
+    "skill_area": "DevOps",
+    "simple_explanation": "Docker permet d'emballer une application avec ses dépendances dans un conteneur.",
+    "professional_use": "Aide à déployer une application de façon stable sur différentes machines.",
+    "proof": "DevOps projects"
   },
   {
-    "id": "containers",
-    "title": "Introduction to Containers with Docker, Kubernetes and OpenShift",
-    "type": "common",
-    "category": "DevOps",
-    "skill": "Package and deploy applications",
-    "simpleExplanation": "Containers help run applications in a stable and portable environment.",
-    "professionalUse": "Prepare the application for professional deployment.",
+    "id": "kubernetes",
+    "name": "Kubernetes",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-devops-and-software-engineering",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-devops"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Cloud and DevOps",
+    "simple_explanation": "Kubernetes sert à gérer plusieurs conteneurs, les redémarrer, les mettre à jour et les faire évoluer.",
+    "professional_use": "Utile dans les entreprises qui déploient des applications à grande échelle.",
+    "proof": "Kubernetes Guestbook App"
   },
   {
-    "id": "microservices-serverless",
-    "title": "Application Development using Microservices and Serverless",
-    "type": "common",
-    "category": "Architecture",
-    "skill": "Design modern application architecture",
-    "simpleExplanation": "Microservices divide an application into smaller services. Serverless runs functions without managing servers.",
-    "professionalUse": "Help Engineer Method OS grow into independent modules later.",
+    "id": "ci-cd",
+    "name": "CI/CD",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-devops-and-software-engineering",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-devops"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Automation",
+    "simple_explanation": "CI/CD signifie intégration continue et déploiement continu. Cela automatise les tests et la mise en production.",
+    "professional_use": "Permet de livrer du code plus vite et avec moins d'erreurs.",
+    "proof": "DevOps capstone and deployment exercises"
   },
   {
-    "id": "career-guide",
-    "title": "Software Developer Career Guide and Interview Preparation",
-    "type": "common",
-    "category": "Career",
-    "skill": "Prepare for software jobs and interviews",
-    "simpleExplanation": "This course helps connect technical skills to professional opportunities.",
-    "professionalUse": "Prepare LinkedIn, GitHub, resume, portfolio and job interviews.",
+    "id": "testing",
+    "name": "Testing",
     "certificates": [
-      "ibm-full-stack-javascript-developer",
-      "ibm-ai-developer",
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-full-stack",
+      "ibm-devops",
+      "google-software-engineering",
+      "ibm-ai-python"
+    ],
+    "branch": "similarite",
+    "skill_area": "Quality Assurance",
+    "simple_explanation": "Les tests servent à vérifier que le code fonctionne correctement avant de le livrer.",
+    "professional_use": "Réduit les erreurs et augmente la fiabilité d'une application.",
+    "proof": "Python tests, project evaluations"
   },
   {
-    "id": "javascript-essentials",
-    "title": "JavaScript Programming Essentials",
-    "type": "specialized",
-    "category": "JavaScript",
-    "skill": "Write JavaScript logic",
-    "simpleExplanation": "This course builds the core programming logic used in JavaScript applications.",
-    "professionalUse": "Create functions, conditions, arrays and logic for web applications.",
+    "id": "debugging",
+    "name": "Debugging",
     "certificates": [
-      "ibm-full-stack-javascript-developer"
-    ]
+      "ibm-full-stack",
+      "ibm-devops",
+      "micro1-ai-interview"
+    ],
+    "branch": "similarite",
+    "skill_area": "Problem Solving",
+    "simple_explanation": "Le debugging consiste à trouver la cause d'une erreur, la corriger et vérifier que la solution fonctionne.",
+    "professional_use": "Compétence essentielle pour tout ingénieur logiciel.",
+    "proof": "Corrections de projets Coursera, préparation micro1"
   },
   {
-    "id": "node-mongodb",
-    "title": "Node.js and MongoDB: Developing Back-end Database Applications",
-    "type": "specialized",
-    "category": "Backend Database",
-    "skill": "Connect Node.js applications to MongoDB",
-    "simpleExplanation": "This course teaches how a backend can store and retrieve data from MongoDB.",
-    "professionalUse": "Store courses, concepts, code models and projects in Engineer Method OS.",
+    "id": "technical-interview",
+    "name": "Technical Interview Reasoning",
     "certificates": [
-      "ibm-full-stack-javascript-developer"
-    ]
+      "micro1-ai-interview"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Career Preparation",
+    "simple_explanation": "C'est la capacité d'expliquer son raisonnement, ses choix techniques et sa solution pendant une entrevue.",
+    "professional_use": "Aide à réussir les entrevues pour des rôles de développeur ou d'ingénieur logiciel.",
+    "proof": "micro1 AI Interview preparation"
   },
   {
-    "id": "javascript-capstone",
-    "title": "JavaScript Full Stack Capstone Project",
-    "type": "specialized",
-    "category": "Capstone",
-    "skill": "Build a complete JavaScript full-stack project",
-    "simpleExplanation": "This project connects frontend, backend and database skills into one application.",
-    "professionalUse": "Use the same logic to build Engineer Method OS.",
+    "id": "crop-observation",
+    "name": "Observation de culture",
     "certificates": [
-      "ibm-full-stack-javascript-developer"
-    ]
+      "agriculture-production"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Agriculture",
+    "simple_explanation": "Observer les cultures permet de détecter les problèmes : insectes, maladies, mauvaises herbes, stress hydrique ou dégâts.",
+    "professional_use": "Développe une méthode d'analyse terrain proche du diagnostic en ingénierie.",
+    "proof": "Suivi tomates, laitues, melons, eucalyptus"
   },
   {
-    "id": "devops-intro",
-    "title": "Introduction to DevOps",
-    "type": "specialized",
-    "category": "DevOps",
-    "skill": "Understand DevOps culture and workflow",
-    "simpleExplanation": "DevOps connects development and operations to deliver software faster and better.",
-    "professionalUse": "Organize development, testing, deployment and improvement.",
+    "id": "pest-management",
+    "name": "Lutte intégrée",
     "certificates": [
-      "ibm-devops-and-software-engineering"
-    ]
+      "agriculture-production"
+    ],
+    "branch": "differenciation",
+    "skill_area": "Agriculture and Quality Control",
+    "simple_explanation": "La lutte intégrée consiste à surveiller les ravageurs, décider selon les seuils et choisir une intervention adaptée.",
+    "professional_use": "Montre une compétence de décision basée sur observation, seuils et preuves.",
+    "proof": "Dépistage et plans d'action"
   },
   {
-    "id": "agile-scrum",
-    "title": "Introduction to Agile Development and Scrum",
-    "type": "specialized",
-    "category": "Project Management",
-    "skill": "Organize work in small iterations",
-    "simpleExplanation": "Agile helps build projects step by step. Scrum organizes teamwork with roles and sprints.",
-    "professionalUse": "Plan Engineer Method OS in small professional steps.",
+    "id": "documentation",
+    "name": "Documentation professionnelle",
     "certificates": [
-      "ibm-devops-and-software-engineering"
-    ]
-  },
-  {
-    "id": "linux-shell",
-    "title": "Hands-on Introduction to Linux Commands and Shell Scripting",
-    "type": "specialized",
-    "category": "Linux",
-    "skill": "Use terminal commands and scripts",
-    "simpleExplanation": "Linux commands help manage files, folders, servers and automation tasks.",
-    "professionalUse": "Create folders, run projects, automate tasks and manage deployments.",
-    "certificates": [
-      "ibm-devops-and-software-engineering"
-    ]
-  },
-  {
-    "id": "testing-bdd-tdd",
-    "title": "Introduction to Test and Behavior Driven Development",
-    "type": "specialized",
-    "category": "Testing",
-    "skill": "Write tests and verify behavior",
-    "simpleExplanation": "Testing checks if the application works correctly before and after changes.",
-    "professionalUse": "Make Engineer Method OS reliable and professional.",
-    "certificates": [
-      "ibm-devops-and-software-engineering"
-    ]
-  },
-  {
-    "id": "cicd",
-    "title": "Continuous Integration and Continuous Delivery CI/CD",
-    "type": "specialized",
-    "category": "Automation",
-    "skill": "Automate testing and deployment",
-    "simpleExplanation": "CI/CD automatically checks and prepares code when changes are pushed.",
-    "professionalUse": "Use GitHub Actions later to test and deploy Engineer Method OS.",
-    "certificates": [
-      "ibm-devops-and-software-engineering"
-    ]
-  },
-  {
-    "id": "application-security",
-    "title": "Application Security for Developers and DevOps Professionals",
-    "type": "specialized",
-    "category": "Security",
-    "skill": "Build safer applications",
-    "simpleExplanation": "Security helps protect data, users and application logic.",
-    "professionalUse": "Avoid exposing sensitive data and apply secure coding practices.",
-    "certificates": [
-      "ibm-devops-and-software-engineering"
-    ]
-  },
-  {
-    "id": "monitoring-observability",
-    "title": "Monitoring and Observability for Development and DevOps",
-    "type": "specialized",
-    "category": "Monitoring",
-    "skill": "Observe application health",
-    "simpleExplanation": "Monitoring helps understand if an application is running well or failing.",
-    "professionalUse": "Track errors, logs and performance when the application grows.",
-    "certificates": [
-      "ibm-devops-and-software-engineering"
-    ]
-  },
-  {
-    "id": "ai-intro",
-    "title": "Introduction to Artificial Intelligence AI",
-    "type": "specialized",
-    "category": "Artificial Intelligence",
-    "skill": "Understand AI concepts",
-    "simpleExplanation": "AI allows machines to perform tasks that usually require human intelligence.",
-    "professionalUse": "Understand how AI can support learning, explanation and organization.",
-    "certificates": [
-      "ibm-ai-developer"
-    ]
-  },
-  {
-    "id": "generative-ai",
-    "title": "Generative AI: Introduction and Applications",
-    "type": "specialized",
-    "category": "Generative AI",
-    "skill": "Understand generative AI tools",
-    "simpleExplanation": "Generative AI can create text, explanations, summaries, code and ideas.",
-    "professionalUse": "Create an assistant that explains courses and code models.",
-    "certificates": [
-      "ibm-ai-developer"
-    ]
-  },
-  {
-    "id": "prompt-engineering",
-    "title": "Generative AI: Prompt Engineering Basics",
-    "type": "specialized",
-    "category": "Prompt Engineering",
-    "skill": "Write better instructions for AI",
-    "simpleExplanation": "Prompt engineering helps communicate clearly with AI systems.",
-    "professionalUse": "Create better prompts to explain code, courses and project steps.",
-    "certificates": [
-      "ibm-ai-developer"
-    ]
-  },
-  {
-    "id": "genai-python-apps",
-    "title": "Building Generative AI-Powered Applications with Python",
-    "type": "specialized",
-    "category": "AI Applications",
-    "skill": "Build applications powered by generative AI",
-    "simpleExplanation": "This course connects Python applications with generative AI features.",
-    "professionalUse": "Add AI explanations and learning support to Engineer Method OS.",
-    "certificates": [
-      "ibm-ai-developer"
-    ]
-  },
-  {
-    "id": "django-sql",
-    "title": "Django Application Development with SQL and Databases",
-    "type": "specialized",
-    "category": "Django and Databases",
-    "skill": "Build database-driven Django applications",
-    "simpleExplanation": "Django helps create structured web applications connected to SQL databases.",
-    "professionalUse": "Understand backend architecture and database models more deeply.",
-    "certificates": [
-      "ibm-full-stack-software-developer"
-    ]
-  },
-  {
-    "id": "full-stack-capstone",
-    "title": "Full Stack Application Development Capstone Project",
-    "type": "specialized",
-    "category": "Capstone",
-    "skill": "Build a complete full-stack project",
-    "simpleExplanation": "A capstone project proves that several skills can work together in one application.",
-    "professionalUse": "Use Engineer Method OS as a professional portfolio project.",
-    "certificates": [
-      "ibm-full-stack-software-developer"
-    ]
-  },
-  {
-    "id": "full-stack-assessment",
-    "title": "Full Stack Software Developer Assessment",
-    "type": "specialized",
-    "category": "Assessment",
-    "skill": "Validate full-stack knowledge",
-    "simpleExplanation": "This assessment checks the ability to understand and apply full-stack development skills.",
-    "professionalUse": "Identify strengths and weaknesses before applying for software jobs.",
-    "certificates": [
-      "ibm-full-stack-software-developer"
-    ]
+      "ibm-full-stack",
+      "ibm-devops",
+      "google-software-engineering",
+      "agriculture-production"
+    ],
+    "branch": "similarite",
+    "skill_area": "Professional Communication",
+    "simple_explanation": "La documentation explique ce qui a été fait, pourquoi, comment l'utiliser et comment le vérifier.",
+    "professional_use": "Transforme un projet en preuve professionnelle compréhensible.",
+    "proof": "README, rapports agricoles, notes de projet"
   }
 ]
