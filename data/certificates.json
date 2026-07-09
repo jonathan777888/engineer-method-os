@@ -1,215 +1,158 @@
 [
   {
-    "id": "ibm-full-stack",
+    "id": "ibm-full-stack-software-developer",
     "name": "IBM Full Stack Software Developer",
     "platform": "IBM Skills Network / Coursera",
-    "domain": "Software Engineering",
-    "status": "completed_or_in_progress",
-    "main_goal": "Apprendre à construire des applications web complètes avec frontend, backend, API, base de données et déploiement.",
+    "date_completed": "2026-06-19",
+    "course_count": 15,
+    "domain": "Cloud Native Full Stack Development",
+    "main_goal": "Développer des applications cloud-native complètes avec frontend, backend, bases de données, DevOps, conteneurs et microservices.",
     "common_skills": [
-      "GitHub",
-      "Python",
+      "Software Engineering",
+      "Cloud Computing",
+      "HTML",
+      "CSS",
       "JavaScript",
-      "API REST",
-      "Web development",
-      "Documentation",
-      "Testing"
-    ],
-    "unique_contribution": [
+      "Git",
+      "GitHub",
       "React",
-      "Django",
       "Node.js",
       "Express",
-      "Full-stack architecture",
-      "Frontend and backend integration"
-    ],
-    "projects": [
-      {
-        "name": "Cars Dealership",
-        "repo": "https://github.com/jonathan777888/cars-dealership",
-        "description": "Application de concessionnaire automobile avec backend, frontend et services."
-      },
-      {
-        "name": "Online Course Django",
-        "repo": "https://github.com/jonathan777888/online-course-django",
-        "description": "Application Django de cours en ligne avec modèles, administration et logique de soumission."
-      },
-      {
-        "name": "Paradise Nursery Shopping",
-        "repo": "e-plantShopping",
-        "description": "Application React de boutique de plantes avec panier et composants frontend."
-      }
-    ],
-    "professional_value": "Montre ma capacité à construire une application web complète et à comprendre les liens entre interface, serveur et données."
-  },
-  {
-    "id": "ibm-devops",
-    "name": "IBM DevOps and Software Engineering",
-    "platform": "IBM Skills Network / Coursera",
-    "domain": "DevOps",
-    "status": "completed_or_in_progress",
-    "main_goal": "Comprendre le cycle de vie logiciel, l'automatisation, le cloud, les conteneurs et le déploiement professionnel.",
-    "common_skills": [
-      "GitHub",
-      "Linux",
       "Python",
-      "Cloud",
-      "Testing",
-      "Documentation",
-      "Agile"
-    ],
-    "unique_contribution": [
+      "Flask",
+      "Django",
+      "SQL",
+      "Databases",
       "Docker",
       "Kubernetes",
-      "CI/CD",
+      "OpenShift",
       "Microservices",
-      "Cloud deployment",
-      "Monitoring",
-      "Automation"
-    ],
-    "projects": [
-      {
-        "name": "DevOps Capstone Backup",
-        "repo": "devops-capstone-backup",
-        "description": "Script de sauvegarde automatisée avec Bash."
-      },
-      {
-        "name": "IBM DevOps Product Catalog",
-        "repo": "ibm-devops-product-catalog",
-        "description": "Projet de catalogue produit lié aux pratiques DevOps."
-      },
-      {
-        "name": "Kubernetes Guestbook App",
-        "repo": "kubernetes-guestbook-app",
-        "description": "Déploiement d'une application avec pods, rolling update, rollback et autoscaling."
-      }
-    ],
-    "professional_value": "Montre ma capacité à déployer, maintenir et automatiser des applications comme dans un environnement professionnel."
-  },
-  {
-    "id": "google-software-engineering",
-    "name": "Google Software Engineering Foundations",
-    "platform": "Google / Coursera",
-    "domain": "Software Engineering Methodology",
-    "status": "completed_or_in_progress",
-    "main_goal": "Comprendre la méthode professionnelle derrière la création d'un logiciel.",
-    "common_skills": [
-      "SDLC",
-      "Agile",
-      "Documentation",
-      "Testing",
-      "Software design",
-      "Requirements analysis"
+      "Serverless",
+      "CI/CD"
     ],
     "unique_contribution": [
-      "Waterfall",
-      "Agile",
-      "V-Model",
-      "Software planning",
-      "Professional software process",
-      "Requirement engineering"
+      "Full stack architecture",
+      "Cloud native development",
+      "SaaS solution",
+      "Django ORM",
+      "Bootstrap",
+      "Application security",
+      "Capstone project"
     ],
-    "projects": [
-      {
-        "name": "Engineer Method OS",
-        "repo": "https://github.com/jonathan777888/engineer-method-os",
-        "description": "Application qui organise mes certificats, cours, compétences et preuves professionnelles."
-      }
-    ],
-    "professional_value": "Donne la méthode : analyser, planifier, concevoir, coder, tester, documenter et améliorer."
+    "verification_url": "https://coursera.org/verify/professional-cert/X8WCB5I4PN1B",
+    "professional_value": "Ce certificat montre ma capacité à construire une application complète, du frontend au backend, avec des pratiques cloud-native."
   },
   {
-    "id": "ibm-ai-python",
-    "name": "IBM AI / Python Projects",
+    "id": "ibm-ai-developer",
+    "name": "IBM AI Developer",
     "platform": "IBM Skills Network / Coursera",
-    "domain": "Artificial Intelligence and Python",
-    "status": "completed_or_in_progress",
-    "main_goal": "Utiliser Python et des services IA pour construire des applications intelligentes.",
+    "date_completed": "2026-06-19",
+    "course_count": 10,
+    "domain": "Artificial Intelligence and Generative AI Development",
+    "main_goal": "Développer des applications web et des solutions alimentées par l'intelligence artificielle générative.",
     "common_skills": [
+      "Software Engineering",
+      "SDLC",
+      "Artificial Intelligence",
+      "Generative AI",
+      "Prompt Engineering",
+      "HTML",
+      "CSS",
+      "JavaScript",
       "Python",
-      "API",
-      "Testing",
+      "Flask"
+    ],
+    "unique_contribution": [
+      "AI application development",
+      "Generative AI applications",
+      "Prompt engineering",
+      "Chatbot development",
+      "AI-powered solutions"
+    ],
+    "verification_url": "https://coursera.org/verify/professional-cert/O1857NTI51SI",
+    "professional_value": "Ce certificat montre ma spécialisation dans le développement d'applications IA, surtout avec Python, Flask et l'IA générative."
+  },
+  {
+    "id": "ibm-devops-software-engineering",
+    "name": "IBM DevOps and Software Engineering",
+    "platform": "IBM Skills Network / Coursera",
+    "date_completed": "2026-06-27",
+    "course_count": 15,
+    "domain": "DevOps and Software Engineering",
+    "main_goal": "Développer une mentalité DevOps avec Agile, Scrum, cloud-native tools, automatisation, CI/CD, conteneurs et observabilité.",
+    "common_skills": [
+      "DevOps",
+      "Cloud Computing",
+      "Agile",
+      "Scrum",
+      "Software Engineering",
+      "Git",
+      "GitHub",
+      "Linux",
+      "Shell Scripting",
+      "Python",
       "Flask",
-      "Documentation",
-      "Debugging"
+      "Docker",
+      "Kubernetes",
+      "OpenShift",
+      "Microservices",
+      "Serverless",
+      "Testing",
+      "CI/CD",
+      "Application Security",
+      "Monitoring",
+      "Observability"
     ],
     "unique_contribution": [
-      "Watson NLP",
-      "Emotion detection",
-      "AI service integration",
-      "Model testing",
-      "AI application deployment"
+      "DevOps mindset",
+      "Linux commands",
+      "Shell scripting",
+      "Test driven development",
+      "Behavior driven development",
+      "Monitoring",
+      "Observability",
+      "DevOps capstone"
     ],
-    "projects": [
-      {
-        "name": "Emotion Detection App",
-        "repo": "oaqjp-final-project-emb-ai",
-        "description": "Application Flask utilisant Watson NLP pour détecter les émotions dans un texte."
-      }
-    ],
-    "professional_value": "Montre ma capacité à intégrer l'intelligence artificielle dans une vraie application."
+    "verification_url": "https://coursera.org/verify/professional-cert/0AXE71NMF6P6",
+    "professional_value": "Ce certificat montre ma capacité à automatiser, tester, sécuriser, déployer et surveiller des applications dans un environnement professionnel."
   },
   {
-    "id": "micro1-ai-interview",
-    "name": "micro1 AI Interview Preparation",
-    "platform": "micro1",
-    "domain": "Technical Interview and AI Evaluation",
-    "status": "preparation",
-    "main_goal": "Me préparer à répondre à des questions techniques, expliquer mon raisonnement et résoudre des problèmes sous pression.",
+    "id": "ibm-full-stack-javascript-developer",
+    "name": "IBM Full-Stack JavaScript Developer",
+    "platform": "IBM Skills Network / Coursera",
+    "date_completed": "2026-07-04",
+    "course_count": 12,
+    "domain": "JavaScript Full Stack Development",
+    "main_goal": "Construire, tester, déployer et gérer des applications full-stack cloud-native avec JavaScript.",
     "common_skills": [
-      "Python",
-      "Algorithms",
-      "Debugging",
-      "Problem solving",
-      "Communication",
-      "Code explanation"
+      "Software Engineering",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git",
+      "GitHub",
+      "React",
+      "Node.js",
+      "Express",
+      "DevOps",
+      "Agile",
+      "CI/CD",
+      "NoSQL",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "OpenShift",
+      "Microservices",
+      "Serverless"
     ],
     "unique_contribution": [
-      "AI interview",
-      "Technical reasoning",
-      "Freelance software engineering",
-      "Code review",
-      "Performance optimization"
+      "JavaScript full stack development",
+      "JavaScript programming essentials",
+      "Node.js and MongoDB",
+      "NoSQL backend database applications",
+      "JavaScript capstone project"
     ],
-    "projects": [
-      {
-        "name": "Interview Training Notes",
-        "repo": "engineer-method-os",
-        "description": "Notes de préparation pour les questions techniques et comportementales."
-      }
-    ],
-    "professional_value": "M'aide à transformer mes connaissances en réponses claires pendant une entrevue."
-  },
-  {
-    "id": "agriculture-production",
-    "name": "Agriculture - Production légumière",
-    "platform": "Cégep / Formation agricole",
-    "domain": "Agriculture and Crop Management",
-    "status": "in_progress",
-    "main_goal": "Développer une méthode d'observation, de planification et d'action dans les cultures.",
-    "common_skills": [
-      "Observation",
-      "Planning",
-      "Documentation",
-      "Problem solving",
-      "Quality control",
-      "Data collection"
-    ],
-    "unique_contribution": [
-      "Dépistage",
-      "Plan d'action intégré",
-      "Gestion de cultures",
-      "Lutte intégrée",
-      "Suivi des parcelles",
-      "Analyse terrain"
-    ],
-    "projects": [
-      {
-        "name": "Suivi tomates, laitues, melons et eucalyptus",
-        "repo": "documents-agriculture",
-        "description": "Observations de terrain, photos, problèmes de couverture, chevreuils, mauvaises herbes et plans d'action."
-      }
-    ],
-    "professional_value": "Montre que ma méthode d'ingénieur vient aussi du terrain : observer, diagnostiquer, décider et agir."
+    "verification_url": "https://coursera.org/verify/professional-cert/5PI48N9SZZ6U",
+    "professional_value": "Ce certificat montre ma capacité à construire des applications full-stack avec JavaScript, React, Node.js, Express et MongoDB."
   }
 ]

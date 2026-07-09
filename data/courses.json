@@ -1,249 +1,241 @@
 [
   {
-    "id": "sdlc",
-    "name": "Software Development Life Cycle",
+    "id": "software-engineering",
+    "name": "Introduction to Software Engineering",
     "certificates": [
-      "google-software-engineering",
-      "ibm-devops",
-      "ibm-full-stack"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
     ],
     "branch": "similarite",
-    "skill_area": "Software Methodology",
-    "simple_explanation": "Le SDLC est le cycle de vie d'un logiciel : comprendre le besoin, concevoir, coder, tester, déployer et maintenir.",
-    "professional_use": "Aide à travailler comme un vrai ingénieur logiciel au lieu de seulement écrire du code.",
-    "proof": "Engineer Method OS documentation"
-  },
-  {
-    "id": "agile",
-    "name": "Agile Methodology",
-    "certificates": [
-      "google-software-engineering",
-      "ibm-devops"
-    ],
-    "branch": "similarite",
-    "skill_area": "Project Management",
-    "simple_explanation": "Agile est une méthode de travail où l'on avance par petites étapes, avec des améliorations régulières.",
-    "professional_use": "Utile pour travailler en équipe, livrer rapidement et corriger selon les retours.",
-    "proof": "Notes SDLC et préparation entretien"
+    "skill_area": "Software Engineering",
+    "simple_explanation": "Ce cours donne les bases du métier : analyser, concevoir, développer, tester et maintenir un logiciel.",
+    "professional_use": "Montre que ma base commune est la méthode d'ingénieur logiciel.",
+    "proof": "Présent dans les 4 certificats IBM."
   },
   {
     "id": "git-github",
-    "name": "Git and GitHub",
+    "name": "Getting Started with Git and GitHub",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "google-software-engineering"
+      "ibm-full-stack-software-developer",
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
     ],
     "branch": "similarite",
     "skill_area": "Version Control",
-    "simple_explanation": "Git permet de suivre les changements dans le code. GitHub permet de publier, collaborer et montrer ses projets.",
-    "professional_use": "Indispensable pour prouver ses projets, collaborer et gérer les versions.",
-    "proof": "Repositories GitHub"
+    "simple_explanation": "Git suit les changements du code. GitHub sert à publier, collaborer et prouver ses projets.",
+    "professional_use": "Indispensable pour un portfolio professionnel.",
+    "proof": "Présent dans 3 certificats IBM."
   },
   {
-    "id": "python",
-    "name": "Python Programming",
+    "id": "html-css-javascript",
+    "name": "Introduction to HTML, CSS, and JavaScript",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "ibm-ai-python",
-      "micro1-ai-interview"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-full-stack-javascript-developer"
     ],
     "branch": "similarite",
-    "skill_area": "Programming",
-    "simple_explanation": "Python est un langage utilisé pour le backend, les scripts, l'IA, les tests et l'automatisation.",
-    "professional_use": "Permet de construire des API, automatiser des tâches et résoudre des problèmes techniques.",
-    "proof": "Emotion Detection App, Django projects, backup scripts"
-  },
-  {
-    "id": "javascript",
-    "name": "JavaScript",
-    "certificates": [
-      "ibm-full-stack"
-    ],
-    "branch": "differenciation",
-    "skill_area": "Frontend and Backend Web",
-    "simple_explanation": "JavaScript permet de rendre les pages web interactives et de construire des serveurs avec Node.js.",
-    "professional_use": "Utile pour créer des interfaces modernes et des applications web complètes.",
-    "proof": "React and Node.js projects"
+    "skill_area": "Frontend Development",
+    "simple_explanation": "HTML structure la page, CSS la présente, JavaScript ajoute l'interactivité.",
+    "professional_use": "Base pour créer une interface web.",
+    "proof": "Présent dans 3 certificats IBM."
   },
   {
     "id": "react",
-    "name": "React",
+    "name": "Developing Front-End Apps with React",
     "certificates": [
-      "ibm-full-stack"
-    ],
-    "branch": "differenciation",
-    "skill_area": "Frontend",
-    "simple_explanation": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur avec des composants.",
-    "professional_use": "Permet de créer des applications web modernes et réutilisables.",
-    "proof": "Paradise Nursery Shopping project"
-  },
-  {
-    "id": "django",
-    "name": "Django",
-    "certificates": [
-      "ibm-full-stack"
-    ],
-    "branch": "differenciation",
-    "skill_area": "Backend",
-    "simple_explanation": "Django est un framework Python pour construire rapidement des applications web sécurisées.",
-    "professional_use": "Utile pour créer un backend, gérer des modèles, des routes, une base de données et une interface admin.",
-    "proof": "Online Course Django project"
-  },
-  {
-    "id": "flask",
-    "name": "Flask",
-    "certificates": [
-      "ibm-ai-python",
-      "ibm-full-stack"
+      "ibm-full-stack-software-developer",
+      "ibm-full-stack-javascript-developer"
     ],
     "branch": "similarite",
-    "skill_area": "Backend",
-    "simple_explanation": "Flask est un framework Python léger pour créer des API et des applications web.",
-    "professional_use": "Permet de construire rapidement un service web ou une API.",
-    "proof": "Emotion Detection App"
+    "skill_area": "Frontend Development",
+    "simple_explanation": "React permet de construire des interfaces modernes avec des composants.",
+    "professional_use": "Utile pour créer des applications web professionnelles.",
+    "proof": "Présent dans les certificats Full Stack et Full-Stack JavaScript."
   },
   {
     "id": "node-express",
-    "name": "Node.js and Express",
+    "name": "Developing Back-End Apps with Node.js and Express",
     "certificates": [
-      "ibm-full-stack"
-    ],
-    "branch": "differenciation",
-    "skill_area": "Backend",
-    "simple_explanation": "Node.js permet d'utiliser JavaScript côté serveur. Express sert à créer des routes et des API.",
-    "professional_use": "Utile pour construire des services backend rapides et connecter une application à des données.",
-    "proof": "Express Book Reviews project"
-  },
-  {
-    "id": "api-rest",
-    "name": "REST API",
-    "certificates": [
-      "ibm-full-stack",
-      "ibm-ai-python",
-      "ibm-devops"
+      "ibm-full-stack-software-developer",
+      "ibm-full-stack-javascript-developer"
     ],
     "branch": "similarite",
-    "skill_area": "Backend and Integration",
-    "simple_explanation": "Une API REST permet à deux systèmes de communiquer avec des requêtes comme GET, POST, PUT et DELETE.",
-    "professional_use": "Indispensable pour connecter frontend, backend, IA, bases de données et microservices.",
-    "proof": "Cars Dealership, Express Book Reviews, Emotion Detection"
+    "skill_area": "Backend Development",
+    "simple_explanation": "Node.js permet d'utiliser JavaScript côté serveur. Express permet de créer des routes et des API.",
+    "professional_use": "Base pour construire un backend JavaScript.",
+    "proof": "Présent dans les certificats Full Stack et Full-Stack JavaScript."
   },
   {
-    "id": "docker",
-    "name": "Docker",
+    "id": "python",
+    "name": "Python for Data Science, AI and Development",
     "certificates": [
-      "ibm-devops"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-devops-software-engineering"
+    ],
+    "branch": "similarite",
+    "skill_area": "Python Development",
+    "simple_explanation": "Python est utilisé pour l'IA, le backend, les scripts et l'automatisation.",
+    "professional_use": "Compétence centrale pour IA, Flask, DevOps et automatisation.",
+    "proof": "Présent dans 3 certificats IBM."
+  },
+  {
+    "id": "flask-ai",
+    "name": "Developing AI Applications with Python and Flask",
+    "certificates": [
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-devops-software-engineering"
+    ],
+    "branch": "similarite",
+    "skill_area": "AI and Backend Development",
+    "simple_explanation": "Flask permet de créer une application web ou une API avec Python, utile pour intégrer des services IA.",
+    "professional_use": "Montre la capacité à construire des applications Python connectées à l'IA.",
+    "proof": "Présent dans 3 certificats IBM."
+  },
+  {
+    "id": "cloud-computing",
+    "name": "Introduction to Cloud Computing",
+    "certificates": [
+      "ibm-full-stack-software-developer",
+      "ibm-devops-software-engineering"
+    ],
+    "branch": "similarite",
+    "skill_area": "Cloud Computing",
+    "simple_explanation": "Le cloud permet d'héberger et déployer des applications sur des services distants.",
+    "professional_use": "Important pour livrer une application accessible en ligne.",
+    "proof": "Présent dans Full Stack et DevOps."
+  },
+  {
+    "id": "containers",
+    "name": "Docker, Kubernetes and OpenShift",
+    "certificates": [
+      "ibm-full-stack-software-developer",
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
+    ],
+    "branch": "similarite",
+    "skill_area": "Containers and Deployment",
+    "simple_explanation": "Docker emballe l'application. Kubernetes et OpenShift aident à déployer et gérer les conteneurs.",
+    "professional_use": "Compétence importante pour les applications cloud-native.",
+    "proof": "Présent dans 3 certificats IBM."
+  },
+  {
+    "id": "microservices-serverless",
+    "name": "Microservices and Serverless",
+    "certificates": [
+      "ibm-full-stack-software-developer",
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
+    ],
+    "branch": "similarite",
+    "skill_area": "Cloud Native Architecture",
+    "simple_explanation": "Les microservices divisent une application en services indépendants. Le serverless permet d'exécuter du code sans gérer directement les serveurs.",
+    "professional_use": "Montre la compréhension d'architectures modernes.",
+    "proof": "Présent dans 3 certificats IBM."
+  },
+  {
+    "id": "generative-ai",
+    "name": "Generative AI and Prompt Engineering",
+    "certificates": [
+      "ibm-ai-developer",
+      "ibm-full-stack-software-developer"
     ],
     "branch": "differenciation",
-    "skill_area": "DevOps",
-    "simple_explanation": "Docker permet d'emballer une application avec ses dépendances dans un conteneur.",
-    "professional_use": "Aide à déployer une application de façon stable sur différentes machines.",
-    "proof": "DevOps projects"
+    "skill_area": "Artificial Intelligence",
+    "simple_explanation": "L'IA générative permet de créer du texte, du code ou des solutions intelligentes. Le prompt engineering aide à mieux communiquer avec les modèles IA.",
+    "professional_use": "Spécialisation utile pour construire des applications IA modernes.",
+    "proof": "Présent surtout dans IBM AI Developer."
   },
   {
-    "id": "kubernetes",
-    "name": "Kubernetes",
+    "id": "django-sql",
+    "name": "Django Application Development with SQL and Databases",
     "certificates": [
-      "ibm-devops"
+      "ibm-full-stack-software-developer"
     ],
     "branch": "differenciation",
-    "skill_area": "Cloud and DevOps",
-    "simple_explanation": "Kubernetes sert à gérer plusieurs conteneurs, les redémarrer, les mettre à jour et les faire évoluer.",
-    "professional_use": "Utile dans les entreprises qui déploient des applications à grande échelle.",
-    "proof": "Kubernetes Guestbook App"
+    "skill_area": "Python Backend and Databases",
+    "simple_explanation": "Django permet de créer des applications web Python avec modèles, base de données, SQL et ORM.",
+    "professional_use": "Spécialisation backend Python.",
+    "proof": "Spécifique au certificat IBM Full Stack Software Developer."
   },
   {
-    "id": "ci-cd",
-    "name": "CI/CD",
+    "id": "devops-agile-scrum",
+    "name": "DevOps, Agile and Scrum",
     "certificates": [
-      "ibm-devops"
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
+    ],
+    "branch": "differenciation",
+    "skill_area": "DevOps Methodology",
+    "simple_explanation": "DevOps, Agile et Scrum organisent le travail logiciel pour livrer plus vite, tester mieux et améliorer continuellement.",
+    "professional_use": "Montre une méthode professionnelle de développement logiciel.",
+    "proof": "Fortement présent dans IBM DevOps."
+  },
+  {
+    "id": "linux-shell",
+    "name": "Linux Commands and Shell Scripting",
+    "certificates": [
+      "ibm-devops-software-engineering"
     ],
     "branch": "differenciation",
     "skill_area": "Automation",
-    "simple_explanation": "CI/CD signifie intégration continue et déploiement continu. Cela automatise les tests et la mise en production.",
-    "professional_use": "Permet de livrer du code plus vite et avec moins d'erreurs.",
-    "proof": "DevOps capstone and deployment exercises"
+    "simple_explanation": "Linux et Shell scripting permettent d'automatiser des tâches et de travailler dans des environnements serveur.",
+    "professional_use": "Compétence importante pour DevOps et cloud.",
+    "proof": "Spécifique au certificat IBM DevOps."
   },
   {
-    "id": "testing",
-    "name": "Testing",
+    "id": "testing-tdd-bdd",
+    "name": "Test and Behavior Driven Development",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "google-software-engineering",
-      "ibm-ai-python"
+      "ibm-devops-software-engineering"
     ],
-    "branch": "similarite",
+    "branch": "differenciation",
     "skill_area": "Quality Assurance",
-    "simple_explanation": "Les tests servent à vérifier que le code fonctionne correctement avant de le livrer.",
-    "professional_use": "Réduit les erreurs et augmente la fiabilité d'une application.",
-    "proof": "Python tests, project evaluations"
+    "simple_explanation": "TDD et BDD sont des méthodes pour écrire des tests et vérifier le comportement attendu d'une application.",
+    "professional_use": "Renforce la qualité du code.",
+    "proof": "Spécifique au certificat IBM DevOps."
   },
   {
-    "id": "debugging",
-    "name": "Debugging",
+    "id": "ci-cd",
+    "name": "Continuous Integration and Continuous Delivery",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "micro1-ai-interview"
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer",
+      "ibm-full-stack-software-developer"
     ],
     "branch": "similarite",
-    "skill_area": "Problem Solving",
-    "simple_explanation": "Le debugging consiste à trouver la cause d'une erreur, la corriger et vérifier que la solution fonctionne.",
-    "professional_use": "Compétence essentielle pour tout ingénieur logiciel.",
-    "proof": "Corrections de projets Coursera, préparation micro1"
+    "skill_area": "DevOps Automation",
+    "simple_explanation": "CI/CD automatise les tests, l'intégration et le déploiement du code.",
+    "professional_use": "Permet de livrer plus rapidement avec moins d'erreurs.",
+    "proof": "Présent dans les certificats orientés cloud-native et DevOps."
   },
   {
-    "id": "technical-interview",
-    "name": "Technical Interview Reasoning",
+    "id": "security-monitoring",
+    "name": "Application Security, Monitoring and Observability",
     "certificates": [
-      "micro1-ai-interview"
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-software-developer"
     ],
     "branch": "differenciation",
-    "skill_area": "Career Preparation",
-    "simple_explanation": "C'est la capacité d'expliquer son raisonnement, ses choix techniques et sa solution pendant une entrevue.",
-    "professional_use": "Aide à réussir les entrevues pour des rôles de développeur ou d'ingénieur logiciel.",
-    "proof": "micro1 AI Interview preparation"
+    "skill_area": "Security and Operations",
+    "simple_explanation": "La sécurité protège l'application. Le monitoring et l'observabilité permettent de voir si elle fonctionne correctement.",
+    "professional_use": "Compétence importante pour maintenir une application en production.",
+    "proof": "Fortement présent dans IBM DevOps."
   },
   {
-    "id": "crop-observation",
-    "name": "Observation de culture",
+    "id": "mongodb-nosql",
+    "name": "Node.js and MongoDB / NoSQL",
     "certificates": [
-      "agriculture-production"
+      "ibm-full-stack-javascript-developer"
     ],
     "branch": "differenciation",
-    "skill_area": "Agriculture",
-    "simple_explanation": "Observer les cultures permet de détecter les problèmes : insectes, maladies, mauvaises herbes, stress hydrique ou dégâts.",
-    "professional_use": "Développe une méthode d'analyse terrain proche du diagnostic en ingénierie.",
-    "proof": "Suivi tomates, laitues, melons, eucalyptus"
-  },
-  {
-    "id": "pest-management",
-    "name": "Lutte intégrée",
-    "certificates": [
-      "agriculture-production"
-    ],
-    "branch": "differenciation",
-    "skill_area": "Agriculture and Quality Control",
-    "simple_explanation": "La lutte intégrée consiste à surveiller les ravageurs, décider selon les seuils et choisir une intervention adaptée.",
-    "professional_use": "Montre une compétence de décision basée sur observation, seuils et preuves.",
-    "proof": "Dépistage et plans d'action"
-  },
-  {
-    "id": "documentation",
-    "name": "Documentation professionnelle",
-    "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "google-software-engineering",
-      "agriculture-production"
-    ],
-    "branch": "similarite",
-    "skill_area": "Professional Communication",
-    "simple_explanation": "La documentation explique ce qui a été fait, pourquoi, comment l'utiliser et comment le vérifier.",
-    "professional_use": "Transforme un projet en preuve professionnelle compréhensible.",
-    "proof": "README, rapports agricoles, notes de projet"
+    "skill_area": "JavaScript Backend and Database",
+    "simple_explanation": "MongoDB est une base NoSQL souvent utilisée avec Node.js pour créer des applications JavaScript full-stack.",
+    "professional_use": "Spécialisation backend JavaScript.",
+    "proof": "Spécifique au certificat IBM Full-Stack JavaScript Developer."
   }
 ]

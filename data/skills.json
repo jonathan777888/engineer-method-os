@@ -6,70 +6,36 @@
     "level": "developing",
     "branch": "similarite",
     "certificates": [
-      "google-software-engineering",
-      "ibm-full-stack",
-      "ibm-devops"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
     ],
-    "description": "Capacité à construire un logiciel avec une méthode : besoin, conception, code, test, documentation et amélioration.",
+    "description": "Capacité à comprendre le cycle de vie logiciel, organiser un projet, développer, tester et améliorer une application.",
     "proof": [
-      "Engineer Method OS",
-      "SDLC notes",
-      "GitHub projects"
+      "Introduction to Software Engineering présent dans les 4 certificats",
+      "Engineer Method OS"
     ],
-    "next_step": "Créer une page docs/architecture.md qui explique la méthode complète."
-  },
-  {
-    "id": "version-control",
-    "name": "Git and GitHub",
-    "category": "Development Tools",
-    "level": "developing",
-    "branch": "similarite",
-    "certificates": [
-      "ibm-full-stack",
-      "ibm-devops"
-    ],
-    "description": "Utiliser Git pour suivre les changements et GitHub pour publier les projets.",
-    "proof": [
-      "engineer-method-os",
-      "cars-dealership",
-      "online-course-django"
-    ],
-    "next_step": "Ajouter des README professionnels dans chaque dépôt."
-  },
-  {
-    "id": "python-development",
-    "name": "Python Development",
-    "category": "Programming",
-    "level": "developing",
-    "branch": "similarite",
-    "certificates": [
-      "ibm-full-stack",
-      "ibm-ai-python",
-      "ibm-devops",
-      "micro1-ai-interview"
-    ],
-    "description": "Utiliser Python pour créer des applications, automatiser des tâches et résoudre des problèmes.",
-    "proof": [
-      "Emotion Detection App",
-      "Django project",
-      "Backup script"
-    ],
-    "next_step": "Créer un dossier examples/python avec des mini-projets propres."
+    "next_step": "Utiliser cette méthode pour documenter chaque projet GitHub."
   },
   {
     "id": "frontend-development",
     "name": "Frontend Development",
     "category": "Web Development",
-    "level": "beginner_to_developing",
-    "branch": "differenciation",
+    "level": "developing",
+    "branch": "similarite",
     "certificates": [
-      "ibm-full-stack"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-full-stack-javascript-developer"
     ],
-    "description": "Créer l'interface visible d'une application avec HTML, CSS, JavaScript et React.",
+    "description": "Créer des interfaces web avec HTML, CSS, JavaScript et React.",
     "proof": [
-      "Paradise Nursery Shopping"
+      "HTML CSS JavaScript",
+      "React",
+      "JavaScript Full Stack"
     ],
-    "next_step": "Corriger et améliorer le projet React pour dépasser 70%."
+    "next_step": "Créer une interface propre pour Engineer Method OS."
   },
   {
     "id": "backend-development",
@@ -78,69 +44,145 @@
     "level": "developing",
     "branch": "similarite",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-ai-python"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-full-stack-javascript-developer"
     ],
-    "description": "Créer la partie serveur d'une application : routes, API, logique métier et connexion aux données.",
+    "description": "Créer la partie serveur d'une application avec Node.js, Express, Python, Flask ou Django.",
     "proof": [
-      "Django project",
-      "Flask Emotion Detection",
-      "Express Book Reviews"
+      "Node.js and Express",
+      "Python and Flask",
+      "Django with SQL"
     ],
-    "next_step": "Créer une API simple pour Engineer Method OS."
+    "next_step": "Créer une API pour afficher certificats, cours et compétences."
   },
   {
-    "id": "api-design",
-    "name": "API Design",
-    "category": "Backend and Integration",
+    "id": "python-ai-development",
+    "name": "Python and AI Development",
+    "category": "Artificial Intelligence",
     "level": "developing",
     "branch": "similarite",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-ai-python",
-      "ibm-devops"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-devops-software-engineering"
     ],
-    "description": "Créer des points d'entrée qui permettent à plusieurs systèmes de communiquer.",
+    "description": "Utiliser Python et Flask pour créer des applications web et des solutions IA.",
     "proof": [
-      "GET, POST, PUT, DELETE exercises",
-      "Cars Dealership services",
-      "Emotion Detection endpoint"
+      "Python for Data Science, AI and Development",
+      "Developing AI Applications with Python and Flask",
+      "IBM AI Developer"
     ],
-    "next_step": "Créer un fichier docs/api-design.md."
+    "next_step": "Ajouter un mini-projet IA dans le portfolio."
+  },
+  {
+    "id": "generative-ai-development",
+    "name": "Generative AI Development",
+    "category": "Artificial Intelligence",
+    "level": "developing",
+    "branch": "differenciation",
+    "certificates": [
+      "ibm-ai-developer"
+    ],
+    "description": "Construire des applications alimentées par l'IA générative et utiliser le prompt engineering.",
+    "proof": [
+      "Generative AI Introduction and Applications",
+      "Prompt Engineering Basics",
+      "Building Generative AI-Powered Applications with Python"
+    ],
+    "next_step": "Créer une section IA générative dans Engineer Method OS."
   },
   {
     "id": "devops-foundation",
     "name": "DevOps Foundation",
     "category": "DevOps",
-    "level": "beginner_to_developing",
-    "branch": "differenciation",
+    "level": "developing",
+    "branch": "similarite",
     "certificates": [
-      "ibm-devops"
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-software-developer",
+      "ibm-full-stack-javascript-developer"
     ],
-    "description": "Comprendre comment automatiser, tester, déployer et maintenir une application.",
+    "description": "Comprendre DevOps, Agile, cloud-native tools, automatisation, conteneurs et CI/CD.",
     "proof": [
-      "DevOps capstone",
-      "Product Catalog",
-      "Kubernetes Guestbook"
+      "IBM DevOps and Software Engineering",
+      "CI/CD",
+      "Docker Kubernetes OpenShift"
     ],
-    "next_step": "Documenter Docker, Kubernetes et CI/CD dans docs/differenciations.md."
+    "next_step": "Documenter le pipeline d'un projet."
   },
   {
-    "id": "cloud-deployment",
-    "name": "Cloud Deployment",
+    "id": "cloud-native-development",
+    "name": "Cloud Native Development",
     "category": "Cloud",
-    "level": "beginner_to_developing",
+    "level": "developing",
+    "branch": "similarite",
+    "certificates": [
+      "ibm-full-stack-software-developer",
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
+    ],
+    "description": "Construire des applications pensées pour le cloud avec conteneurs, microservices, serverless et déploiement.",
+    "proof": [
+      "Cloud Computing",
+      "Docker",
+      "Kubernetes",
+      "OpenShift",
+      "Microservices",
+      "Serverless"
+    ],
+    "next_step": "Déployer Engineer Method OS en ligne."
+  },
+  {
+    "id": "javascript-full-stack",
+    "name": "JavaScript Full Stack Development",
+    "category": "Full Stack Development",
+    "level": "developing",
     "branch": "differenciation",
     "certificates": [
-      "ibm-devops",
-      "ibm-full-stack"
+      "ibm-full-stack-javascript-developer"
     ],
-    "description": "Déployer une application dans un environnement cloud ou un service distant.",
+    "description": "Construire des applications full-stack avec JavaScript, React, Node.js, Express et MongoDB.",
     "proof": [
-      "IBM Cloud exercises",
-      "Code Engine references"
+      "IBM Full-Stack JavaScript Developer",
+      "JavaScript Programming Essentials",
+      "Node.js and MongoDB",
+      "JavaScript Full Stack Capstone"
     ],
-    "next_step": "Déployer une petite version de Engineer Method OS."
+    "next_step": "Créer un projet JavaScript complet avec frontend, backend et base de données."
+  },
+  {
+    "id": "python-django-database",
+    "name": "Python Django and Database Development",
+    "category": "Backend Development",
+    "level": "developing",
+    "branch": "differenciation",
+    "certificates": [
+      "ibm-full-stack-software-developer"
+    ],
+    "description": "Construire des applications backend avec Django, SQL, bases de données et ORM.",
+    "proof": [
+      "Django Application Development with SQL and Databases",
+      "Django ORM",
+      "SQL"
+    ],
+    "next_step": "Améliorer le projet Online Course Django."
+  },
+  {
+    "id": "automation-linux-shell",
+    "name": "Linux and Shell Automation",
+    "category": "Automation",
+    "level": "developing",
+    "branch": "differenciation",
+    "certificates": [
+      "ibm-devops-software-engineering"
+    ],
+    "description": "Utiliser Linux et les scripts shell pour automatiser des tâches techniques.",
+    "proof": [
+      "Hands-on Introduction to Linux Commands and Shell Scripting",
+      "DevOps Capstone Project"
+    ],
+    "next_step": "Créer un script d'automatisation propre dans le dépôt."
   },
   {
     "id": "testing-quality",
@@ -149,108 +191,52 @@
     "level": "developing",
     "branch": "similarite",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "ibm-ai-python",
-      "agriculture-production"
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-software-developer",
+      "ibm-full-stack-javascript-developer"
     ],
-    "description": "Vérifier qu'une solution fonctionne, trouver les erreurs et améliorer la qualité.",
+    "description": "Tester, vérifier et améliorer la qualité d'une application.",
     "proof": [
-      "Python tests",
-      "Coursera project grading",
-      "Agricultural quality control"
+      "Test and Behavior Driven Development",
+      "CI/CD",
+      "Engineer Method OS validate script"
     ],
-    "next_step": "Ajouter une section Quality Gate dans Engineer Method OS."
+    "next_step": "Ajouter plus de tests automatiques au projet."
   },
   {
-    "id": "debugging-problem-solving",
-    "name": "Debugging and Problem Solving",
-    "category": "Problem Solving",
-    "level": "developing",
-    "branch": "similarite",
-    "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "micro1-ai-interview"
-    ],
-    "description": "Analyser un problème, trouver la cause, corriger et vérifier.",
-    "proof": [
-      "Corrections de projets",
-      "Préparation entretien micro1",
-      "Résolution d'erreurs GitHub/Codespaces"
-    ],
-    "next_step": "Créer un journal d'erreurs dans docs/debugging-log.md."
-  },
-  {
-    "id": "technical-communication",
-    "name": "Technical Communication",
-    "category": "Communication",
-    "level": "developing",
-    "branch": "similarite",
-    "certificates": [
-      "google-software-engineering",
-      "micro1-ai-interview",
-      "agriculture-production"
-    ],
-    "description": "Expliquer clairement un projet, une décision technique ou une observation terrain.",
-    "proof": [
-      "README",
-      "Rapports agricoles",
-      "Réponses d'entrevue"
-    ],
-    "next_step": "Préparer des explications courtes pour chaque projet GitHub."
-  },
-  {
-    "id": "ai-application",
-    "name": "AI Application Integration",
-    "category": "Artificial Intelligence",
-    "level": "beginner_to_developing",
-    "branch": "differenciation",
-    "certificates": [
-      "ibm-ai-python"
-    ],
-    "description": "Intégrer un service d'intelligence artificielle dans une application.",
-    "proof": [
-      "Emotion Detection App"
-    ],
-    "next_step": "Ajouter une page qui explique comment l'IA est utilisée dans le projet."
-  },
-  {
-    "id": "agricultural-diagnosis",
-    "name": "Agricultural Diagnosis",
-    "category": "Agriculture",
+    "id": "security-monitoring-observability",
+    "name": "Security, Monitoring and Observability",
+    "category": "Operations",
     "level": "developing",
     "branch": "differenciation",
     "certificates": [
-      "agriculture-production"
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-software-developer"
     ],
-    "description": "Observer une culture, reconnaître un problème et proposer une action.",
+    "description": "Sécuriser une application et surveiller son fonctionnement en production.",
     "proof": [
-      "Tomates",
-      "Melons d'eau",
-      "Laitues",
-      "Eucalyptus",
-      "Dépistage"
+      "Application Security for Developers and DevOps Professionals",
+      "Monitoring and Observability for Development and DevOps"
     ],
-    "next_step": "Créer une carte entre observation agricole et méthode d'ingénieur."
+    "next_step": "Créer une section sécurité et monitoring dans la documentation."
   },
   {
-    "id": "portfolio-building",
+    "id": "professional-portfolio",
     "name": "Professional Portfolio Building",
     "category": "Career",
     "level": "developing",
     "branch": "similarite",
     "certificates": [
-      "ibm-full-stack",
-      "ibm-devops",
-      "google-software-engineering",
-      "micro1-ai-interview",
-      "agriculture-production"
+      "ibm-full-stack-software-developer",
+      "ibm-ai-developer",
+      "ibm-devops-software-engineering",
+      "ibm-full-stack-javascript-developer"
     ],
-    "description": "Transformer les certificats, cours et projets en preuves professionnelles visibles.",
+    "description": "Transformer les certificats en preuves professionnelles visibles pour GitHub, CV, entretien et portfolio.",
     "proof": [
-      "Engineer Method OS"
+      "Engineer Method OS",
+      "4 IBM Professional Certificates"
     ],
-    "next_step": "Créer une page principale qui affiche certificats, cours, compétences et preuves."
+    "next_step": "Ajouter une page portfolio qui résume les 4 certificats."
   }
 ]
