@@ -1,0 +1,22 @@
+{
+  "name": "engineer-method-os",
+  "version": "1.0.0",
+  "description": "A personal system that transforms certificates, courses, skills and projects into professional proof.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dashboard": "node src/app.js dashboard",
+    "certificates": "node src/app.js certificates",
+    "similarites": "node src/app.js similarites",
+    "differenciations": "node src/app.js differentiations"
+  },
+  "keywords": [
+    "portfolio",
+    "certificates",
+    "software-engineering",
+    "skills",
+    "learning-os"
+  ],
+  "author": "Jonathan KPAKPO",
+  "license": "MIT"
+}
