@@ -1,4 +1,6 @@
-const MODEL = "openai/gpt-5.6-sol";
+import { generateText } from "ai";
+
+const MODEL = "openai/gpt-5.4";
 
 const SYSTEM_PROMPT = `Tu es Engineer Method OS, un mentor d'ingénierie logicielle en français connecté à un atelier de fabrication de logiciels.
 
@@ -54,11 +56,6 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Méthode non permise." });
   }
 
-  const apiKey = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN;
-  if (!apiKey) {
-    return res.status(503).json({ error: "Le moteur IA n'est pas encore authentifié sur Vercel." });
-  }
-
   try {
     const project = req.body?.project || {};
     const messages = normalizeMessages(req.body?.messages);
@@ -67,32 +64,19 @@ export default async function handler(req, res) {
     }
 
     const projectContext = `Fiche projet actuelle (peut être incomplète) :\n${JSON.stringify(project, null, 2)}`;
-    const gatewayResponse = await fetch("https://ai-gateway.vercel.sh/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: MODEL,
-        messages: [
-          { role: "system", content: SYSTEM_PROMPT },
-          { role: "system", content: projectContext },
-          ...messages
-        ],
-        temperature: 0.3,
-        max_tokens: 1800
-      })
+    const { text: raw } = await generateText({
+      model: MODEL,
+      system: `${SYSTEM_PROMPT}\n\n${projectContext}`,
+      messages,
+      temperature: 0.3,
+      maxOutputTokens: 1800,
+      providerOptions: {
+        gateway: {
+          tags: ["engineer-method-os", "feature:chat", "env:production"]
+        }
+      }
     });
 
-    if (!gatewayResponse.ok) {
-      const detail = await gatewayResponse.text();
-      console.error("AI Gateway error", gatewayResponse.status, detail);
-      return res.status(502).json({ error: "Le moteur IA a refusé la requête. Vérifie la configuration AI Gateway." });
-    }
-
-    const completion = await gatewayResponse.json();
-    const raw = completion?.choices?.[0]?.message?.content;
     if (typeof raw !== "string" || !raw.trim()) {
       return res.status(502).json({ error: "Le moteur IA a retourné une réponse vide." });
     }
@@ -112,6 +96,13 @@ export default async function handler(req, res) {
     });
   } catch (error) {
     console.error("Engineer Method chat failure", error);
+    const status = Number(error?.statusCode) || 500;
+    if (status === 401 || status === 403) {
+      return res.status(503).json({ error: "AI Gateway doit être activé pour ce projet Vercel." });
+    }
+    if (status === 402) {
+      return res.status(503).json({ error: "Le crédit AI Gateway Vercel est épuisé." });
+    }
     return res.status(500).json({ error: "Erreur interne du moteur Engineer Method." });
   }
 }
