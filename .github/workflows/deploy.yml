@@ -3,7 +3,7 @@ name: Deploy Engineer Method OS V3
 on:
   push:
     branches:
-      - agent/mastery-system
+      - main
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout V3 branch
+      - name: Checkout repository
         uses: actions/checkout@v6
 
       - name: Configure GitHub Pages
