@@ -1,0 +1,53 @@
+{
+  "schema_version": "3.0",
+  "stats": {"certificates":4,"course_occurrences":52,"unique_courses_approx":31,"competency_blocks":14},
+  "mastery_formula": {"knowledge":15,"coding":30,"acceptance":25,"quality":20,"explanation":10},
+  "mastery_levels": [
+    {"level":0,"label":"À évaluer","min":0,"description":"Aucune preuve actuelle."},
+    {"level":1,"label":"Comprendre","min":1,"description":"Je peux expliquer avec mes mots pourquoi le concept existe."},
+    {"level":2,"label":"Reconnaître","min":50,"description":"Je peux reconnaître le concept dans du code, un diagramme ou une configuration."},
+    {"level":3,"label":"Construire guidé","min":65,"description":"Je peux construire une petite fonctionnalité avec accompagnement."},
+    {"level":4,"label":"Modifier et corriger","min":80,"description":"Je peux adapter, tester et déboguer une solution existante."},
+    {"level":5,"label":"Intégrer et démontrer","min":90,"description":"Je peux choisir l'approche, l'intégrer dans un projet et produire une preuve professionnelle."}
+  ],
+  "certificates": [
+    {"id":"full-stack","name":"IBM Full Stack Software Developer","completed":"2026-06-19","course_count":15,"focus":"Construction full-stack et cloud-native de bout en bout.","unique":"Django + SQL/ORM, architecture full-stack, capstone cloud-native.","courses":["Introduction to Software Engineering","Introduction to Cloud Computing","Introduction to HTML, CSS, & JavaScript","Getting Started with Git and GitHub","Developing Front-End Apps with React","Developing Back-End Apps with Node.js and Express","Python for Data Science, AI & Development","Developing AI Applications with Python and Flask","Django Application Development with SQL and Databases","Introduction to Containers w/ Docker, Kubernetes & OpenShift","Application Development using Microservices and Serverless","Full Stack Application Development Capstone Project","Full Stack Software Developer Assessment","Generative AI: Elevate your Software Development Career","Software Developer Career Guide and Interview Preparation"]},
+    {"id":"ai-developer","name":"IBM AI Developer","completed":"2026-06-19","course_count":10,"focus":"Développement d'applications IA et IA générative.","unique":"Prompt engineering, applications GenAI, assistants IA et intégration IA.","courses":["Introduction to Software Engineering","Introduction to Artificial Intelligence (AI)","Generative AI: Introduction and Applications","Generative AI: Prompt Engineering Basics","Introduction to HTML, CSS, & JavaScript","Python for Data Science, AI & Development","Developing AI Applications with Python and Flask","Building Generative AI-Powered Applications with Python","Generative AI: Elevate your Software Development Career","Software Developer Career Guide and Interview Preparation"]},
+    {"id":"devops","name":"IBM DevOps and Software Engineering","completed":"2026-06-27","course_count":15,"focus":"Qualité, automatisation, livraison, sécurité et opérations.","unique":"Linux/Shell, Agile/Scrum, TDD/BDD, CI/CD, sécurité, monitoring et observabilité.","courses":["Introduction to DevOps","Introduction to Cloud Computing","Introduction to Agile Development and Scrum","Introduction to Software Engineering","Getting Started with Git and GitHub","Hands-on Introduction to Linux Commands and Shell Scripting","Python for Data Science, AI & Development","Developing AI Applications with Python and Flask","Introduction to Containers w/ Docker, Kubernetes & OpenShift","Application Development using Microservices and Serverless","Introduction to Test and Behavior Driven Development","Continuous Integration and Continuous Delivery (CI/CD)","Application Security for Developers and DevOps Professionals","Monitoring and Observability for Development and DevOps","DevOps Capstone Project"]},
+    {"id":"js-full-stack","name":"IBM Full-Stack JavaScript Developer","completed":"2026-07-04","course_count":12,"focus":"JavaScript de bout en bout avec React, Node/Express et MongoDB.","unique":"JavaScript Programming Essentials, Node.js + MongoDB/NoSQL et capstone JavaScript.","courses":["Introduction to Software Engineering","Introduction to HTML, CSS, & JavaScript","Getting Started with Git and GitHub","JavaScript Programming Essentials","Developing Front-End Apps with React","Developing Back-End Apps with Node.js and Express","Get Started with Cloud Native, DevOps, Agile, and NoSQL","Introduction to Containers w/ Docker, Kubernetes & OpenShift","Application Development using Microservices and Serverless","Node.js & MongoDB: Developing Back-end Database Applications","JavaScript Full Stack Capstone Project","Software Developer Career Guide and Interview Preparation"]}
+  ],
+  "similarity": [
+    {"name":"Software Engineering & SDLC","shared":4,"why":"Tronc commun : analyser le besoin, structurer les exigences et comprendre le cycle de vie."},
+    {"name":"Git & GitHub","shared":3,"why":"Versionner, collaborer et transformer le travail en preuve professionnelle."},
+    {"name":"HTML, CSS & JavaScript","shared":3,"why":"Fondations du Web et de toute interface moderne."},
+    {"name":"Python","shared":3,"why":"Langage commun aux parcours Full Stack, AI et DevOps."},
+    {"name":"Flask / applications Python","shared":3,"why":"Relier Python à des services web et à l'IA."},
+    {"name":"Docker / Kubernetes / OpenShift","shared":3,"why":"Fondations de la livraison cloud-native."},
+    {"name":"Microservices & Serverless","shared":3,"why":"Architectures distribuées à utiliser seulement lorsque le besoin le justifie."},
+    {"name":"React","shared":2,"why":"Interface par composants dans les deux parcours full-stack."},
+    {"name":"Node.js & Express","shared":2,"why":"Backend JavaScript commun aux deux parcours full-stack."},
+    {"name":"Cloud Computing","shared":2,"why":"Hébergement, configuration et livraison d'applications."}
+  ],
+  "differentiation": [
+    {"certificate":"IBM Full Stack Software Developer","items":["Django + SQL + ORM","Architecture full-stack multi-technologies","Capstone cloud-native"]},
+    {"certificate":"IBM AI Developer","items":["Prompt Engineering","Applications GenAI","Assistants IA","Validation des sorties IA"]},
+    {"certificate":"IBM DevOps and Software Engineering","items":["Linux & Shell","Agile/Scrum","TDD/BDD","CI/CD","Application Security","Monitoring & Observability"]},
+    {"certificate":"IBM Full-Stack JavaScript Developer","items":["JavaScript Programming Essentials","Node.js + MongoDB","NoSQL","Stack JavaScript cohérente de bout en bout"]}
+  ],
+  "competencies": [
+    {"id":"software-engineering","order":1,"name":"Software Engineering & SDLC","certificates":["Full Stack","AI Developer","DevOps","JavaScript"],"concepts":["problème utilisateur","exigences","user stories","critères d'acceptation","architecture","SDLC"],"proof":"Spécification d'une fonctionnalité réelle avec critères testables avant de coder."},
+    {"id":"agile-scrum","order":2,"name":"Agile & Scrum","certificates":["DevOps","JavaScript"],"concepts":["backlog","priorité","sprint","Definition of Done"],"proof":"Backlog réel avec user stories, priorités et Definition of Done."},
+    {"id":"git-github","order":3,"name":"Git & GitHub","certificates":["Full Stack","DevOps","JavaScript"],"concepts":["repository","branch","commit","pull request","diff"],"proof":"Branche, commits clairs et pull request documentée."},
+    {"id":"linux-shell","order":4,"name":"Linux & Shell","certificates":["DevOps"],"concepts":["fichiers","permissions","processus","variables d'environnement","scripts"],"proof":"Script shell reproductible et expliqué."},
+    {"id":"web-foundations","order":5,"name":"HTML, CSS & JavaScript","certificates":["Full Stack","AI Developer","JavaScript"],"concepts":["HTML sémantique","CSS","DOM","événements","async/fetch"],"proof":"Interface interactive sans framework, responsive et expliquée."},
+    {"id":"react","order":6,"name":"React & UI","certificates":["Full Stack","JavaScript"],"concepts":["components","props","state","hooks","forms","API"],"proof":"Page React avec composants, état, formulaire et données."},
+    {"id":"node-express","order":7,"name":"Node.js & Express","certificates":["Full Stack","JavaScript"],"concepts":["HTTP","routes","middleware","REST","validation","errors"],"proof":"API CRUD avec validation et codes HTTP corrects."},
+    {"id":"python","order":8,"name":"Python","certificates":["Full Stack","AI Developer","DevOps"],"concepts":["types","collections","functions","exceptions","modules","API"],"proof":"Script ou service Python utile, testé et expliqué."},
+    {"id":"python-web-api","order":9,"name":"Flask, Django & REST APIs","certificates":["Full Stack","AI Developer","DevOps"],"concepts":["routes","requests","ORM","models","auth","serialization"],"proof":"API Python reliée à des données et consommée par une interface."},
+    {"id":"data","order":10,"name":"SQL, NoSQL & Data Modeling","certificates":["Full Stack","JavaScript"],"concepts":["entities","relations","keys","constraints","CRUD","documents","indexes"],"proof":"Modèle de données justifié + CRUD + contraintes testées."},
+    {"id":"cloud","order":11,"name":"Cloud & Cloud Native","certificates":["Full Stack","DevOps","JavaScript"],"concepts":["hosting","environment variables","deployment","cloud-native"],"proof":"Déploiement reproductible documenté."},
+    {"id":"containers","order":12,"name":"Containers, Microservices & Serverless","certificates":["Full Stack","DevOps","JavaScript"],"concepts":["Docker","images","containers","Kubernetes","OpenShift","services"],"proof":"Conteneuriser une application simple avec health check avant toute complexité distribuée."},
+    {"id":"quality","order":13,"name":"Tests, CI/CD, Security & Observability","certificates":["DevOps","Full Stack","JavaScript"],"concepts":["unit tests","TDD/BDD","CI/CD","security","logs","metrics","traces"],"proof":"Tests + pipeline + sécurité + gestion d'erreurs + journalisation utile."},
+    {"id":"generative-ai","order":14,"name":"Generative AI & Prompt Engineering","certificates":["AI Developer","Full Stack"],"concepts":["prompt contract","structured output","RAG","evaluation","hallucination control"],"proof":"Fonctionnalité IA avec entrées/sorties définies, tests et critères de qualité."}
+  ]
+}
