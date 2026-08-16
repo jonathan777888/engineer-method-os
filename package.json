@@ -1,7 +1,8 @@
 {
   "name": "engineer-method-os",
-  "version": "1.0.0",
-  "description": "A personal system that transforms certificates, courses, skills and projects into professional proof.",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Engineer Method OS - atelier IA pour transformer les certificats IBM en logiciels reels.",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -10,12 +11,16 @@
     "similarites": "node src/app.js similarites",
     "differenciations": "node src/app.js differentiations"
   },
+  "dependencies": {
+    "ai": "^6.0.0"
+  },
   "keywords": [
     "portfolio",
     "certificates",
     "software-engineering",
     "skills",
-    "learning-os"
+    "learning-os",
+    "ai"
   ],
   "author": "Jonathan KPAKPO",
   "license": "MIT"
