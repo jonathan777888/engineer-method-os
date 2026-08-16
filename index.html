@@ -1,132 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Engineer Method OS — poste de commande pour transformer des idées en logiciels avec ChatGPT et les certificats IBM." />
-  <title>Engineer Method OS</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Engineer Method OS — système de maîtrise IBM par projets, preuves et compréhension réelle.">
+  <title>Engineer Method OS · Mastery V3</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <p class="eyebrow">Poste de commande d'ingénierie</p>
-      <h1>Engineer Method OS</h1>
-    </div>
-    <div class="status"><span class="dot"></span> ChatGPT Bridge · Sans API IA payante</div>
-  </header>
+<header class="topbar">
+  <div><p class="eyebrow">Engineer Method OS · V3</p><h1>Comprendre → Construire → Prouver</h1></div>
+  <div class="status"><span class="dot"></span> 4 certificats IBM · maîtrise par preuves</div>
+</header>
 
-  <main class="workspace">
-    <aside class="project-panel panel">
-      <div class="panel-heading">
-        <div><span class="kicker">01</span><h2>Projet actif</h2></div>
-        <button id="resetProject" class="ghost-button" type="button">Nouveau</button>
-      </div>
+<nav class="tabs" aria-label="Navigation principale">
+  <button class="tab active" data-view="dashboard">Tableau de bord</button>
+  <button class="tab" data-view="certificates">Certificats</button>
+  <button class="tab" data-view="similarity">Similarités</button>
+  <button class="tab" data-view="specialties">Spécialités</button>
+  <button class="tab" data-view="mastery">Maîtrise</button>
+  <button class="tab" data-view="workshop">Atelier projet</button>
+</nav>
 
-      <label>Nom du projet
-        <input id="projectName" value="Marketplace commerçants" />
-      </label>
-      <label>Problème à résoudre
-        <textarea id="projectProblem" rows="4">Permettre à plusieurs commerçants de proposer leurs produits et à des clients de les découvrir et de les acheter.</textarea>
-      </label>
-      <label>Utilisateurs
-        <input id="projectUsers" value="Clients, commerçants, administrateur" />
-      </label>
-      <label>MVP actuel
-        <textarea id="projectMvp" rows="4">Compte client, compte commerçant, boutique, produits, catalogue, panier, commande.</textarea>
-      </label>
-      <label>Étape actuelle
-        <input id="projectStep" value="Définition du produit et des exigences" />
-      </label>
+<main class="shell">
+<section id="dashboard" class="view active">
+  <div class="hero panel">
+    <div><span class="kicker">VISION</span><h2>Le certificat prouve le parcours. Le logiciel mesure ce que tu sais réellement faire.</h2><p>Engineer Method OS relie maintenant <strong>Certificat → Cours → Compétence → Exercice → Fonctionnalité → Test → Preuve → Niveau de maîtrise</strong>.</p></div>
+    <div class="hero-rule"><strong>Règle</strong><span>Aucun niveau n'est accordé uniquement parce qu'un cours est terminé.</span></div>
+  </div>
+  <div id="statCards" class="stats-grid"></div>
+  <div class="two-col">
+    <section class="panel padded"><div class="section-head"><div><span class="kicker">PROCHAINE ÉTAPE</span><h2>Recommandation</h2></div></div><div id="nextRecommendation"></div></section>
+    <section class="panel padded"><div class="section-head"><div><span class="kicker">INDICE</span><h2>Compréhension globale</h2></div><strong id="globalScore">0%</strong></div><div class="meter"><span id="globalMeter"></span></div><p class="muted">Score pondéré des 14 blocs. Sans preuve ou auto-évaluation enregistrée, le score reste à zéro.</p></section>
+  </div>
+  <section class="panel padded"><div class="section-head"><div><span class="kicker">PARCOURS</span><h2>14 blocs dans l'ordre recommandé</h2></div></div><div id="roadmap" class="roadmap"></div></section>
+</section>
 
-      <div class="save-row">
-        <button id="saveProject" class="primary-button" type="button">Enregistrer</button>
-        <span id="saveState">Mémoire locale</span>
-      </div>
-    </aside>
+<section id="certificates" class="view">
+  <section class="panel padded"><div class="section-head"><div><span class="kicker">CURRICULUM REGISTRY</span><h2>Mes 4 certificats IBM</h2></div><span class="muted">52 occurrences de cours · ~31 cours distincts après normalisation</span></div><div id="certificateGrid" class="cert-grid"></div></section>
+</section>
 
-    <section class="bridge-panel panel">
-      <div class="panel-heading bridge-heading">
-        <div><span class="kicker">02</span><h2>Pont ChatGPT</h2></div>
-        <span class="ai-chip">ChatGPT = cerveau</span>
-      </div>
+<section id="similarity" class="view">
+  <section class="panel padded"><div class="section-head"><div><span class="kicker">BRANCHE DE SIMILARITÉ</span><h2>Ce que je ne dois pas réapprendre quatre fois</h2></div></div><p class="lead">Une compétence commune est consolidée une seule fois, mais peut recevoir plusieurs preuves provenant de projets différents.</p><div id="similarityGrid" class="similarity-grid"></div></section>
+</section>
 
-      <div class="bridge-flow">
-        <span>1. Décris</span><b>→</b><span>2. Copie vers ChatGPT</span><b>→</b><span>3. Importe la réponse</span>
-      </div>
+<section id="specialties" class="view">
+  <section class="panel padded"><div class="section-head"><div><span class="kicker">BRANCHE DE DIFFÉRENCIATION</span><h2>Ce que chaque certificat ajoute</h2></div></div><div id="specialtyGrid" class="specialty-grid"></div></section>
+</section>
 
-      <div id="messages" class="messages" aria-live="polite">
-        <article class="message assistant">
-          <div class="avatar">EM</div>
-          <div class="bubble">
-            <strong>Engineer Method OS</strong>
-            <p>Je prépare le contexte du projet et tes références IBM. ChatGPT réfléchit et répond. Tu réimportes ensuite sa réponse ici pour mettre à jour le projet et les compétences.</p>
-          </div>
-        </article>
-      </div>
+<section id="mastery" class="view">
+  <div class="mastery-layout">
+    <section class="panel padded"><div class="section-head"><div><span class="kicker">14 BLOCS</span><h2>Choisir une compétence</h2></div></div><div id="competencyList" class="competency-list"></div></section>
+    <section class="panel padded mastery-detail"><div id="masteryDetail"></div></section>
+  </div>
+</section>
 
-      <section class="bridge-box">
-        <label>Ce que tu veux construire ou décider maintenant
-          <textarea id="prompt" rows="4" placeholder="Ex. Je veux commencer l'inscription des commerçants. Explique-moi la première étape avec mes certificats IBM."></textarea>
-        </label>
-        <div class="action-row">
-          <button id="prepareButton" class="primary-button" type="button">Préparer pour ChatGPT</button>
-          <span id="bridgeStatus">Prêt</span>
-        </div>
-      </section>
-
-      <section id="packetSection" class="bridge-box hidden">
-        <div class="mini-heading"><strong>Paquet Engineer Method</strong><span>Projet + demande + certificats + format de retour</span></div>
-        <textarea id="packetOutput" rows="9" readonly></textarea>
-        <div class="action-row split-actions">
-          <button id="copyPacket" class="primary-button" type="button">Copier le paquet</button>
-          <a class="ghost-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Ouvrir ChatGPT</a>
-        </div>
-      </section>
-
-      <section class="bridge-box import-box">
-        <div class="mini-heading"><strong>Réponse de ChatGPT</strong><span>Colle ici la réponse complète reçue dans ChatGPT.</span></div>
-        <textarea id="importResponse" rows="8" placeholder="Colle ici la réponse de ChatGPT, y compris le bloc <ENGINEER_METHOD_UPDATE>…"></textarea>
-        <div class="action-row">
-          <button id="importButton" class="primary-button" type="button">Importer dans Engineer Method</button>
-          <span id="importStatus">En attente</span>
-        </div>
-      </section>
+<section id="workshop" class="view">
+  <div class="workshop-grid">
+    <section class="panel padded">
+      <div class="section-head"><div><span class="kicker">PROJET ACTIF</span><h2>Fiche projet</h2></div><button id="resetProject" class="ghost-button">Nouveau</button></div>
+      <label>Nom<input id="projectName" value="Marketplace commerçants"></label>
+      <label>Problème<textarea id="projectProblem" rows="4">Permettre à plusieurs commerçants de proposer leurs produits et à des clients de les découvrir et de les acheter.</textarea></label>
+      <label>Utilisateurs<input id="projectUsers" value="Clients, commerçants, administrateur"></label>
+      <label>MVP<textarea id="projectMvp" rows="4">Compte client, compte commerçant, boutique, produits, catalogue, panier, commande.</textarea></label>
+      <label>Étape<input id="projectStep" value="Définition du produit et des exigences"></label>
+      <button id="saveProject" class="primary-button wide">Enregistrer la fiche</button><span id="saveState" class="tiny-status">Mémoire locale</span>
     </section>
 
-    <aside class="method-panel panel">
-      <div class="panel-heading">
-        <div><span class="kicker">03</span><h2>Compétences IBM</h2></div>
-      </div>
-      <p class="muted">Cette zone se met à jour quand tu importes une réponse structurée de ChatGPT.</p>
-      <div id="skillsList" class="skills-list">
-        <article class="skill-card active">
-          <span>Bloc 1</span>
-          <h3>Software Engineering & SDLC</h3>
-          <p><strong>Certificats :</strong> Full Stack, DevOps, AI Developer, Full-Stack JavaScript.</p>
-          <p><strong>Cours :</strong> Introduction to Software Engineering.</p>
-          <p><strong>Pourquoi :</strong> définir le problème, les utilisateurs, les exigences et le MVP avant de coder.</p>
-        </article>
-      </div>
-    </aside>
-
-    <section class="build-panel panel">
-      <div class="panel-heading">
-        <div><span class="kicker">04</span><h2>Pipeline de fabrication</h2></div>
-        <span class="muted">ChatGPT conseille; Engineer Method OS structure et conserve l'état.</span>
-      </div>
-      <div id="pipeline" class="pipeline">
-        <article class="pipeline-step current" data-stage="specification"><span>1</span><h3>Spécification</h3><p>Problème, utilisateurs, MVP, règles.</p></article>
-        <article class="pipeline-step" data-stage="architecture"><span>2</span><h3>Architecture</h3><p>Frontend, backend, données, API.</p></article>
-        <article class="pipeline-step" data-stage="code"><span>3</span><h3>Code</h3><p>Fichiers et fonctionnalités guidées.</p></article>
-        <article class="pipeline-step" data-stage="tests"><span>4</span><h3>Tests</h3><p>Validation, erreurs et sécurité.</p></article>
-        <article class="pipeline-step" data-stage="github"><span>5</span><h3>GitHub</h3><p>Commits, branches et preuves.</p></article>
-        <article class="pipeline-step" data-stage="netlify"><span>6</span><h3>Netlify</h3><p>Publication et vérification.</p></article>
-      </div>
-      <div class="build-note"><strong>Règle Engineer Method :</strong> comprendre → expliquer avec le certificat → construire → tester → corriger → prouver.</div>
+    <section class="panel padded">
+      <div class="section-head"><div><span class="kicker">PONT CHATGPT</span><h2>Construire avec mes certificats</h2></div><span class="chip">Sans API IA payante</span></div>
+      <div class="learning-loop"><span>Comprendre</span><b>→</b><span>Expliquer</span><b>→</b><span>Pratiquer</span><b>→</b><span>Construire</span><b>→</b><span>Tester</span><b>→</b><span>Prouver</span></div>
+      <label>Ce que je veux faire maintenant<textarea id="prompt" rows="5" placeholder="Ex. Je veux construire l'inscription d'un commerçant. Guide-moi et évalue les compétences IBM utilisées."></textarea></label>
+      <button id="prepareButton" class="primary-button wide">Préparer le paquet ChatGPT</button><span id="bridgeStatus" class="tiny-status">Prêt</span>
+      <div id="packetSection" class="bridge-box hidden"><h3>Paquet Engineer Method</h3><textarea id="packetOutput" rows="12" readonly></textarea><div class="button-row"><button id="copyPacket" class="primary-button">Copier</button><a class="ghost-link" href="https://chatgpt.com/" target="_blank" rel="noopener">Ouvrir ChatGPT</a></div></div>
+      <div class="bridge-box"><h3>Réimporter la réponse</h3><p class="muted">Colle la réponse complète contenant le bloc <code>&lt;ENGINEER_METHOD_UPDATE&gt;</code>.</p><textarea id="importResponse" rows="9"></textarea><button id="importButton" class="primary-button wide">Importer dans Engineer Method</button><span id="importStatus" class="tiny-status">En attente</span></div>
     </section>
-  </main>
-
-  <script src="app.js" defer></script>
+  </div>
+  <section class="panel padded"><div class="section-head"><div><span class="kicker">PIPELINE</span><h2>Fabrication et preuve</h2></div></div><div id="pipeline" class="pipeline"><article class="pipeline-step current" data-stage="specification"><span>1</span><h3>Spécification</h3><p>Besoin, exigences, critères.</p></article><article class="pipeline-step" data-stage="architecture"><span>2</span><h3>Architecture</h3><p>Données, composants, API.</p></article><article class="pipeline-step" data-stage="code"><span>3</span><h3>Code</h3><p>Petite fonctionnalité guidée.</p></article><article class="pipeline-step" data-stage="tests"><span>4</span><h3>Tests</h3><p>Normal, limite, erreur.</p></article><article class="pipeline-step" data-stage="github"><span>5</span><h3>GitHub</h3><p>Commit, PR, preuve.</p></article><article class="pipeline-step" data-stage="publish"><span>6</span><h3>Publication</h3><p>Déploiement reproductible.</p></article></div></section>
+</section>
+</main>
+<script src="app.js" defer></script>
 </body>
 </html>
