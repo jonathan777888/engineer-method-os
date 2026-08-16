@@ -1,27 +1,9 @@
 {
   "name": "engineer-method-os",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Engineer Method OS - atelier IA pour transformer les certificats IBM en logiciels reels.",
-  "main": "src/app.js",
-  "scripts": {
-    "start": "node src/app.js",
-    "dashboard": "node src/app.js dashboard",
-    "certificates": "node src/app.js certificates",
-    "similarites": "node src/app.js similarites",
-    "differenciations": "node src/app.js differentiations"
-  },
-  "dependencies": {
-    "ai": "^6.0.0"
-  },
-  "keywords": [
-    "portfolio",
-    "certificates",
-    "software-engineering",
-    "skills",
-    "learning-os",
-    "ai"
-  ],
+  "description": "Engineer Method OS - poste de commande pour concevoir des logiciels avec ChatGPT et les certificats IBM.",
+  "keywords": ["software-engineering","skills","learning-os","chatgpt","ibm"],
   "author": "Jonathan KPAKPO",
   "license": "MIT"
 }
