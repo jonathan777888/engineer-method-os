@@ -3,93 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engineer Method OS — atelier IA pour transformer les compétences IBM en logiciels réels." />
   <title>Engineer Method OS</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <p class="eyebrow">Système de maîtrise par projets</p>
-    <h1>Engineer Method OS</h1>
-    <p>Transformer mes certificats IBM en compétences réellement utilisables, projets concrets et preuves GitHub.</p>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Atelier d'ingénierie guidé par l'IA</p>
+      <h1>Engineer Method OS</h1>
+    </div>
+    <div class="status"><span class="dot"></span> Projet + IA + IBM + Build</div>
   </header>
 
-  <main>
-    <section class="panel">
-      <h2>Mission</h2>
-      <p>Le certificat prouve qu'un parcours a été complété. Engineer Method OS mesure autre chose : ma capacité actuelle à comprendre, reconnaître, construire, corriger et intégrer une compétence dans un vrai projet.</p>
-      <p class="chain">Certificat → Cours → Concept → Compétence → Niveau → Exercice → Fonctionnalité → Projet → Preuve GitHub</p>
-    </section>
-
-    <section class="panel">
-      <h2>Les 5 niveaux de maîtrise</h2>
-      <div class="grid">
-        <article class="card"><h3>Niveau 1 — Comprendre</h3><p>Expliquer avec mes propres mots le rôle de la compétence et donner un exemple.</p></article>
-        <article class="card"><h3>Niveau 2 — Reconnaître</h3><p>Lire du code, une configuration ou un diagramme simple et identifier les éléments principaux.</p></article>
-        <article class="card"><h3>Niveau 3 — Construire accompagné</h3><p>Réaliser une petite fonctionnalité avec un guidage pas à pas tout en comprenant les étapes.</p></article>
-        <article class="card"><h3>Niveau 4 — Modifier et corriger</h3><p>Adapter une solution existante, diagnostiquer une erreur et effectuer une correction contrôlée.</p></article>
-        <article class="card"><h3>Niveau 5 — Intégrer et démontrer</h3><p>Relier la compétence au système complet, justifier les choix et produire une preuve professionnelle.</p></article>
+  <main class="workspace">
+    <aside class="project-panel panel">
+      <div class="panel-heading">
+        <div><span class="kicker">01</span><h2>Projet actif</h2></div>
+        <button id="resetProject" class="ghost-button" type="button">Nouveau</button>
       </div>
-    </section>
 
-    <section class="panel">
-      <h2>Les 14 blocs à maîtriser</h2>
-      <p>On ne refait pas les cours certificat par certificat. On consolide les recouvrements puis on pratique chaque bloc dans des fonctionnalités réelles.</p>
-      <div class="grid">
-        <article class="card"><h3>1. Software Engineering & SDLC</h3><p>Problème, utilisateurs, exigences, architecture, cycle de vie et qualité.</p></article>
-        <article class="card"><h3>2. Agile & Scrum</h3><p>Backlog, user stories, priorité, sprint et amélioration continue.</p></article>
-        <article class="card"><h3>3. Git & GitHub</h3><p>Commits, branches, pull requests, historique, README et preuves.</p></article>
-        <article class="card"><h3>4. Linux & Shell</h3><p>Environnement d'exécution, fichiers, permissions, processus et automatisation.</p></article>
-        <article class="card"><h3>5. HTML, CSS & JavaScript</h3><p>Fondations du Web, DOM, événements, logique et appels asynchrones.</p></article>
-        <article class="card"><h3>6. React & UI</h3><p>Composants, props, state, hooks, formulaires et consommation d'API.</p></article>
-        <article class="card"><h3>7. Node.js & Express</h3><p>Backend JavaScript, routes, middleware, validation et API REST.</p></article>
-        <article class="card"><h3>8. Python</h3><p>Logique, scripts, automatisation, backend et applications IA.</p></article>
-        <article class="card"><h3>9. Flask, Django & REST APIs</h3><p>Services web Python, modèles, ORM, validation et APIs.</p></article>
-        <article class="card"><h3>10. SQL, NoSQL & Data Modeling</h3><p>Entités, relations, contraintes, CRUD, ORM et documents.</p></article>
-        <article class="card"><h3>11. Cloud & Cloud Native</h3><p>Hébergement, configuration, déploiement et séparation des composants.</p></article>
-        <article class="card"><h3>12. Containers & Distributed Architecture</h3><p>Docker, Kubernetes/OpenShift, microservices et serverless lorsque nécessaire.</p></article>
-        <article class="card"><h3>13. Quality & Operations</h3><p>Tests, CI/CD, sécurité, logs, métriques, traces et diagnostic.</p></article>
-        <article class="card"><h3>14. Generative AI</h3><p>Prompt engineering, modèles, contexte, validation et intégration IA contrôlée.</p></article>
+      <label>Nom du projet
+        <input id="projectName" value="Marketplace commerçants" />
+      </label>
+      <label>Problème à résoudre
+        <textarea id="projectProblem" rows="4">Permettre à plusieurs commerçants de proposer leurs produits et à des clients de les découvrir et de les acheter.</textarea>
+      </label>
+      <label>Utilisateurs
+        <input id="projectUsers" value="Clients, commerçants, administrateur" />
+      </label>
+      <label>MVP actuel
+        <textarea id="projectMvp" rows="4">Compte client, compte commerçant, boutique, produits, catalogue, panier, commande.</textarea>
+      </label>
+      <label>Étape actuelle
+        <input id="projectStep" value="Définition du produit et des exigences" />
+      </label>
+
+      <div class="save-row">
+        <button id="saveProject" class="primary-button" type="button">Enregistrer la fiche</button>
+        <span id="saveState">Mémoire locale</span>
       </div>
-    </section>
+    </aside>
 
-    <section class="panel">
-      <h2>Ordre d'apprentissage</h2>
-      <div class="badges">
-        <span>1 Software Engineering</span><span>2 Agile</span><span>3 Git/GitHub</span><span>4 Linux/Shell</span><span>5 Web</span><span>6 React</span><span>7 Node/Express</span><span>8 Python</span><span>9 Flask/Django/API</span><span>10 Données</span><span>11 Cloud</span><span>12 Conteneurs</span><span>13 Qualité/Opérations</span><span>14 IA</span>
+    <section class="chat-panel panel">
+      <div class="panel-heading chat-heading">
+        <div><span class="kicker">02</span><h2>Conversation Engineer</h2></div>
+        <span class="ai-chip">IA pédagogique</span>
       </div>
-    </section>
 
-    <section class="panel">
-      <h2>Apprendre par fonctionnalité</h2>
-      <p>Pour chaque fonctionnalité : besoin utilisateur → compétences nécessaires → révision ciblée → construction guidée → tests → correction → documentation → commit GitHub → mise à jour du niveau.</p>
-      <div class="card">
-        <h3>Exemple : inscription d'un commerçant</h3>
-        <p><strong>Software Engineering :</strong> règles et parcours.</p>
-        <p><strong>Données :</strong> User, Merchant et Store.</p>
-        <p><strong>Backend :</strong> API d'inscription.</p>
-        <p><strong>Frontend :</strong> formulaire et validation.</p>
-        <p><strong>GitHub :</strong> branche, commit et preuve.</p>
-        <p><strong>Qualité :</strong> tests, sécurité et gestion des erreurs.</p>
+      <div id="messages" class="messages" aria-live="polite">
+        <article class="message assistant">
+          <div class="avatar">EM</div>
+          <div class="bubble">
+            <strong>Engineer Method OS</strong>
+            <p>Dis-moi ce que tu veux construire ou modifier. Je vais d'abord comprendre le besoin, puis je vais t'expliquer les compétences de tes certificats IBM mobilisées avant de passer à la fabrication.</p>
+          </div>
+        </article>
       </div>
+
+      <form id="chatForm" class="composer">
+        <textarea id="prompt" rows="3" placeholder="Ex. Je veux commencer l'inscription des commerçants. Explique-moi ce qu'on doit faire et quelle compétence IBM on utilise." required></textarea>
+        <div class="composer-footer">
+          <span id="chatStatus">Prêt</span>
+          <button id="sendButton" class="primary-button" type="submit">Envoyer à Engineer Method</button>
+        </div>
+      </form>
     </section>
 
-    <section class="panel">
-      <h2>Les 4 certificats IBM</h2>
-      <div class="grid">
-        <article class="card"><h3>IBM Full Stack Software Developer</h3><p>Colonne vertébrale : application complète, frontend, backend, données, cloud-native et SaaS.</p></article>
-        <article class="card"><h3>IBM Full-Stack JavaScript Developer</h3><p>Spécialisation JavaScript : React, Node.js, Express, MongoDB et full-stack JS.</p></article>
-        <article class="card"><h3>IBM AI Developer</h3><p>Spécialisation IA : Python, Flask, IA générative, prompt engineering et applications IA.</p></article>
-        <article class="card"><h3>IBM DevOps and Software Engineering</h3><p>Industrialisation : Agile, Linux, tests, CI/CD, sécurité, conteneurs et observabilité.</p></article>
+    <aside class="method-panel panel">
+      <div class="panel-heading">
+        <div><span class="kicker">03</span><h2>Compétences IBM</h2></div>
       </div>
-    </section>
+      <p class="muted">Le chat met à jour cette zone avec ce que tu dois maîtriser maintenant.</p>
+      <div id="skillsList" class="skills-list">
+        <article class="skill-card active">
+          <span>Bloc 1</span>
+          <h3>Software Engineering & SDLC</h3>
+          <p><strong>Certificats :</strong> Full Stack, DevOps, AI Developer, Full-Stack JavaScript.</p>
+          <p><strong>Cours :</strong> Introduction to Software Engineering.</p>
+          <p><strong>Pourquoi maintenant :</strong> définir le problème, les utilisateurs, les exigences et le MVP avant de coder.</p>
+        </article>
+      </div>
+    </aside>
 
-    <section class="panel">
-      <h2>Règle centrale</h2>
-      <p class="chain">Je ne cours pas après les titres. Je construis. Je répète. Je corrige. Je progresse.</p>
-      <p>Les méthodes personnelles numérotées 1 à 10 restent un module distinct à intégrer lorsque leur formulation exacte est retrouvée. Elles ne seront pas inventées.</p>
+    <section class="build-panel panel">
+      <div class="panel-heading">
+        <div><span class="kicker">04</span><h2>Pipeline de fabrication</h2></div>
+        <span class="muted">La conversation alimente le projet qui alimente ensuite la fabrication.</span>
+      </div>
+      <div class="pipeline">
+        <article class="pipeline-step current"><span>1</span><h3>Spécification</h3><p>Problème, utilisateurs, MVP, règles.</p></article>
+        <article class="pipeline-step"><span>2</span><h3>Architecture</h3><p>Frontend, backend, données, API.</p></article>
+        <article class="pipeline-step"><span>3</span><h3>Code</h3><p>Fichiers et fonctionnalités guidées.</p></article>
+        <article class="pipeline-step"><span>4</span><h3>Tests</h3><p>Validation, erreurs et sécurité.</p></article>
+        <article class="pipeline-step"><span>5</span><h3>GitHub</h3><p>Commits, branches, preuves.</p></article>
+        <article class="pipeline-step"><span>6</span><h3>Vercel</h3><p>Déploiement et vérification.</p></article>
+      </div>
+      <div class="build-note">
+        <strong>Règle Engineer Method :</strong> comprendre → expliquer avec le certificat → construire → tester → corriger → prouver.
+      </div>
     </section>
   </main>
 
-  <footer><p>Engineer Method OS — Jonathan KPAKPO</p></footer>
+  <script src="app.js" defer></script>
 </body>
 </html>
