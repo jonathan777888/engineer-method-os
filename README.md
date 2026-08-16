@@ -2,6 +2,10 @@
 
 Engineer Method OS transforme mes certificats IBM en un système de maîtrise par projets.
 
+## Site officiel
+
+GitHub Pages : https://jonathan777888.github.io/engineer-method-os/
+
 L'objectif n'est pas de collectionner les titres ni de mémoriser tous les cours. Le système doit me permettre de comprendre les concepts, reconnaître le code, construire avec accompagnement, corriger et modifier une solution, puis intégrer la compétence dans un vrai projet avec une preuve GitHub.
 
 ## Architecture du système
