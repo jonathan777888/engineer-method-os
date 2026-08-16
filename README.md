@@ -44,7 +44,7 @@ Le parcours regroupe les contenus des quatre certificats en 14 blocs :
 13. Tests, CI/CD, sécurité, monitoring et observabilité
 14. IA générative, prompt engineering et applications IA
 
-Le fichier `data/mastery-path.json` contient la version structurée de ce parcours. La documentation détaillée se trouve dans `docs/mastery-system.md`.
+Le fichier `data/engineer-method-v3.json` contient la version structurée principale du parcours V3. La documentation détaillée se trouve dans `docs/mastery-system.md`.
 
 ## Projet laboratoire
 
