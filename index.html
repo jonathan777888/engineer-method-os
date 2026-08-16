@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Engineer Method OS — atelier IA pour transformer les compétences IBM en logiciels réels." />
+  <meta name="description" content="Engineer Method OS — poste de commande pour transformer des idées en logiciels avec ChatGPT et les certificats IBM." />
   <title>Engineer Method OS</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
     <div>
-      <p class="eyebrow">Atelier d'ingénierie guidé par l'IA</p>
+      <p class="eyebrow">Poste de commande d'ingénierie</p>
       <h1>Engineer Method OS</h1>
     </div>
-    <div class="status"><span class="dot"></span> Projet + IA + IBM + Build</div>
+    <div class="status"><span class="dot"></span> ChatGPT Bridge · Sans API IA payante</div>
   </header>
 
   <main class="workspace">
@@ -40,15 +40,19 @@
       </label>
 
       <div class="save-row">
-        <button id="saveProject" class="primary-button" type="button">Enregistrer la fiche</button>
+        <button id="saveProject" class="primary-button" type="button">Enregistrer</button>
         <span id="saveState">Mémoire locale</span>
       </div>
     </aside>
 
-    <section class="chat-panel panel">
-      <div class="panel-heading chat-heading">
-        <div><span class="kicker">02</span><h2>Conversation Engineer</h2></div>
-        <span class="ai-chip">IA pédagogique</span>
+    <section class="bridge-panel panel">
+      <div class="panel-heading bridge-heading">
+        <div><span class="kicker">02</span><h2>Pont ChatGPT</h2></div>
+        <span class="ai-chip">ChatGPT = cerveau</span>
+      </div>
+
+      <div class="bridge-flow">
+        <span>1. Décris</span><b>→</b><span>2. Copie vers ChatGPT</span><b>→</b><span>3. Importe la réponse</span>
       </div>
 
       <div id="messages" class="messages" aria-live="polite">
@@ -56,32 +60,52 @@
           <div class="avatar">EM</div>
           <div class="bubble">
             <strong>Engineer Method OS</strong>
-            <p>Dis-moi ce que tu veux construire ou modifier. Je vais d'abord comprendre le besoin, puis je vais t'expliquer les compétences de tes certificats IBM mobilisées avant de passer à la fabrication.</p>
+            <p>Je prépare le contexte du projet et tes références IBM. ChatGPT réfléchit et répond. Tu réimportes ensuite sa réponse ici pour mettre à jour le projet et les compétences.</p>
           </div>
         </article>
       </div>
 
-      <form id="chatForm" class="composer">
-        <textarea id="prompt" rows="3" placeholder="Ex. Je veux commencer l'inscription des commerçants. Explique-moi ce qu'on doit faire et quelle compétence IBM on utilise." required></textarea>
-        <div class="composer-footer">
-          <span id="chatStatus">Prêt</span>
-          <button id="sendButton" class="primary-button" type="submit">Envoyer à Engineer Method</button>
+      <section class="bridge-box">
+        <label>Ce que tu veux construire ou décider maintenant
+          <textarea id="prompt" rows="4" placeholder="Ex. Je veux commencer l'inscription des commerçants. Explique-moi la première étape avec mes certificats IBM."></textarea>
+        </label>
+        <div class="action-row">
+          <button id="prepareButton" class="primary-button" type="button">Préparer pour ChatGPT</button>
+          <span id="bridgeStatus">Prêt</span>
         </div>
-      </form>
+      </section>
+
+      <section id="packetSection" class="bridge-box hidden">
+        <div class="mini-heading"><strong>Paquet Engineer Method</strong><span>Projet + demande + certificats + format de retour</span></div>
+        <textarea id="packetOutput" rows="9" readonly></textarea>
+        <div class="action-row split-actions">
+          <button id="copyPacket" class="primary-button" type="button">Copier le paquet</button>
+          <a class="ghost-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Ouvrir ChatGPT</a>
+        </div>
+      </section>
+
+      <section class="bridge-box import-box">
+        <div class="mini-heading"><strong>Réponse de ChatGPT</strong><span>Colle ici la réponse complète reçue dans ChatGPT.</span></div>
+        <textarea id="importResponse" rows="8" placeholder="Colle ici la réponse de ChatGPT, y compris le bloc <ENGINEER_METHOD_UPDATE>…"></textarea>
+        <div class="action-row">
+          <button id="importButton" class="primary-button" type="button">Importer dans Engineer Method</button>
+          <span id="importStatus">En attente</span>
+        </div>
+      </section>
     </section>
 
     <aside class="method-panel panel">
       <div class="panel-heading">
         <div><span class="kicker">03</span><h2>Compétences IBM</h2></div>
       </div>
-      <p class="muted">Le chat met à jour cette zone avec ce que tu dois maîtriser maintenant.</p>
+      <p class="muted">Cette zone se met à jour quand tu importes une réponse structurée de ChatGPT.</p>
       <div id="skillsList" class="skills-list">
         <article class="skill-card active">
           <span>Bloc 1</span>
           <h3>Software Engineering & SDLC</h3>
           <p><strong>Certificats :</strong> Full Stack, DevOps, AI Developer, Full-Stack JavaScript.</p>
           <p><strong>Cours :</strong> Introduction to Software Engineering.</p>
-          <p><strong>Pourquoi maintenant :</strong> définir le problème, les utilisateurs, les exigences et le MVP avant de coder.</p>
+          <p><strong>Pourquoi :</strong> définir le problème, les utilisateurs, les exigences et le MVP avant de coder.</p>
         </article>
       </div>
     </aside>
@@ -89,19 +113,17 @@
     <section class="build-panel panel">
       <div class="panel-heading">
         <div><span class="kicker">04</span><h2>Pipeline de fabrication</h2></div>
-        <span class="muted">La conversation alimente le projet qui alimente ensuite la fabrication.</span>
+        <span class="muted">ChatGPT conseille; Engineer Method OS structure et conserve l'état.</span>
       </div>
-      <div class="pipeline">
-        <article class="pipeline-step current"><span>1</span><h3>Spécification</h3><p>Problème, utilisateurs, MVP, règles.</p></article>
-        <article class="pipeline-step"><span>2</span><h3>Architecture</h3><p>Frontend, backend, données, API.</p></article>
-        <article class="pipeline-step"><span>3</span><h3>Code</h3><p>Fichiers et fonctionnalités guidées.</p></article>
-        <article class="pipeline-step"><span>4</span><h3>Tests</h3><p>Validation, erreurs et sécurité.</p></article>
-        <article class="pipeline-step"><span>5</span><h3>GitHub</h3><p>Commits, branches, preuves.</p></article>
-        <article class="pipeline-step"><span>6</span><h3>Vercel</h3><p>Déploiement et vérification.</p></article>
+      <div id="pipeline" class="pipeline">
+        <article class="pipeline-step current" data-stage="specification"><span>1</span><h3>Spécification</h3><p>Problème, utilisateurs, MVP, règles.</p></article>
+        <article class="pipeline-step" data-stage="architecture"><span>2</span><h3>Architecture</h3><p>Frontend, backend, données, API.</p></article>
+        <article class="pipeline-step" data-stage="code"><span>3</span><h3>Code</h3><p>Fichiers et fonctionnalités guidées.</p></article>
+        <article class="pipeline-step" data-stage="tests"><span>4</span><h3>Tests</h3><p>Validation, erreurs et sécurité.</p></article>
+        <article class="pipeline-step" data-stage="github"><span>5</span><h3>GitHub</h3><p>Commits, branches et preuves.</p></article>
+        <article class="pipeline-step" data-stage="netlify"><span>6</span><h3>Netlify</h3><p>Publication et vérification.</p></article>
       </div>
-      <div class="build-note">
-        <strong>Règle Engineer Method :</strong> comprendre → expliquer avec le certificat → construire → tester → corriger → prouver.
-      </div>
+      <div class="build-note"><strong>Règle Engineer Method :</strong> comprendre → expliquer avec le certificat → construire → tester → corriger → prouver.</div>
     </section>
   </main>
 
